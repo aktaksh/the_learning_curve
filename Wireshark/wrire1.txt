@@ -1,0 +1,11 @@
+unix windows
+live packets network interface
+openfiles
+coloredones
+input formts : pcap pcpang
+oracle snoop atmsbnoop
+pcap pcapng 
+cap - windows
+Wirshark cannot --
+it is not intrusion detection system
+it is nto paket manipulator
