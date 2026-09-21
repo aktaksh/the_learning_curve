@@ -1,0 +1,14 @@
+Title,Workstream,Description,Owner(s),Status,Due Date
+Code quality checks and repo restructuring,,Restructure repo and implement CI quality checks,"Amar, Diaa",Pending,2025-08-04
+Role and storage finalization,POST,Assign final storage and hypervisor roles,"Ayush, Amit",Pending,2025-08-04
+CMDB update,POST,Add all newly onboarded hosts to CMDB,TBD,Pending,2025-08-04
+Tanium agent installation,POST,Deploy Tanium agents for endpoint management,TBD,Pending,2025-08-04
+Monitoring/logging setup (Alloy),POST,Implement monitoring/logging system; currently using Alloy,TBD,Pending,2025-08-04
+Automate post pipeline role assignments,POST,Post pipeline completed with all role assignment automated,TBD,Completed,2025-08-04
+CMDB update automation,POST,CMDB update for PCD hosts automated and added in POST pipeline,TBD,Completed,2025-08-04
+BIOS setting - change boot order,POST,Change boot order to set Disk at top,TBD,Pending,2025-08-04
+Storage role assignment,POST,Assign and validate storage role,TBD,Available,2025-08-04
+Image role assignment,POST,Assign image role in Glance,TBD,Available,2025-08-04
+CMDB configuration verification,POST,Ensure CMDB integration is accurate,TBD,Available,2025-08-04
+Validation report for BIOS settings,PRE,Generate validation report for BIOS settings across hosts,TBD,Pending,2025-08-04
+Final validation - OS settings,POST,Check that all OS-level settings match platform requirements,TBD,Pending,2025-08-04
