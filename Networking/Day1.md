@@ -36,8 +36,6 @@ So the MAC address is not actually “hexadecimal” internally; it is binary bi
 
 
 
-ChatGPT can make mistakes. Check important info.
-
 Broadcast --
 
 Destination MAC = FF:FF:FF:FF:FF:FF
