@@ -1,0 +1,238 @@
+zdx-ivoq-wch
+
+Shivangi Goyal
+10:36
+DONE - OOPS - staticmethod 
+DONE - DECORATORS 
+DONE - ITERATORS / GENERATORS - to do - done
+COMPREHENSIONS- to do
+TYPEHINTS
+DONE - EXCEPTIONS - to do
+MEMORY MANAGEMENT - to do
+CONCURRENCY & PARALLELISM
+ASYNC PYTHON - to do
+TYPE SYSTEM
+DONE - FUNCTIOANL PROGRAMMING(MAP,FILTER,ZIP,REDUCE, LAMBDA ..) - to do
+ADVANCED DATA MODEL(HASHING,EQUALITY..) - to do
+PYTHON PERFORMANCE (Big-O analysis, timeit, dis, caching)- to do
+TRACING - to do
+SDLC
+unit testing - all 
+Debugging
+DataBase connectivity
+- Context Managers
+- Static/Class Methods
+- Composition vs Inheritance
+- Magic Methods
+------
+- Singleton
+- Factory Pattern
+- Strategy Pattern
+- Dataclasses
+- Type Hints
+- AsyncIO
+- Threading vs Multiprocessing
+--------
+- Metaclasses
+- Descriptors
+- Dependency Injection
+- Weak References
+- Protocols
+
+
+Advanced Python Developer Roadmap
+
+1. Python Fundamentals
+- Variables
+- Data Types
+- Functions
+- Modules & Packages
+- Exception Handling
+- File Handling
+- List/Dict/Set Comprehensions
+- Lambda
+- map(), filter(), reduce()
+- zip(), enumerate()
+
+2. Object-Oriented Programming (OOP)
+- Classes & Objects
+- Constructors (__init__)
+- self
+- Class vs Instance Variables
+- Inheritance
+- Polymorphism
+- Encapsulation
+- Abstraction
+- Getters & Setters
+- @property
+- Static Methods
+- Class Methods  
+- super()
+- Multiple Inheritance
+- MRO (Method Resolution Order)
+- Composition vs Aggregation
+
+3. Advanced Python
+- Decorators
+- Closures
+- First-Class Functions
+- Higher-Order Functions
+- Generators
+- yield
+- Iterators
+- Context Managers (with)
+- contextlib
+- file handling
+
+4. Memory Management
+- Mutable vs Immutable
+- Object Identity (id)
+- Reference Counting
+- Garbage Collection
+- Shallow Copy
+- Deep Copy
+- Interning
+
+5. Magic (Dunder) Methods
+- __new__
+- __init__
+- __str__
+- __repr__
+- __len__
+- __iter__
+- __next__
+- __call__
+- __getitem__
+- __setitem__
+- __contains__
+- __enter__
+- __exit__
+- __eq__
+- __lt__
+- __hash__
+
+6. Concurrency
+- Threading
+- Multiprocessing
+- AsyncIO
+- GIL
+- Locks
+- Semaphores
+- Queues
+- ThreadPoolExecutor
+- ProcessPoolExecutor
+
+7. Networking
+- Socket Programming
+- TCP
+- UDP
+- HTTP
+- REST APIs
+- WebSockets
+- SSL/TLS
+
+8. Data Handling
+- JSON
+- YAML
+- CSV
+- XML
+- Pickle
+- Dataclasses
+- NamedTuple
+- TypedDict
+- Pydantic
+
+9. Type System
+- Type Hints
+- typing module
+- Generics
+- Protocols
+- ABC (Abstract Base Classes)
+- MyPy
+
+10. Design Patterns
+- Singleton
+- Factory
+- Builder
+- Strategy
+- Observer
+- Adapter
+- Facade
+- Proxy
+- Command
+- Dependency Injection
+
+11. Python Internals
+- Metaclasses
+- Descriptors
+- Reflection
+- Introspection
+- __getattr__
+- __setattr__
+- __slots__
+- Monkey Patching
+
+12. Testing
+- unittest
+- pytest
+- Fixtures
+- Mocking
+- Coverage
+- TDD
+
+13. Performance
+- Profiling
+- timeit
+- cProfile
+- Memory Profiling
+- lru_cache
+- Optimization Techniques
+
+14. Packaging
+- Virtual Environments
+- pip
+- Poetry
+- setuptools
+- Wheels
+- Package Structure
+
+15. System Programming
+- os
+- pathlib
+- shutil
+- subprocess
+- tempfile
+- logging
+- argparse
+- click
+- rich
+
+16. Cloud & Automation
+- boto3
+- Azure SDK
+- Google Cloud SDK
+- OpenStack SDK
+- Kubernetes Python Client
+- Docker SDK
+- GitHub API
+- GitLab API
+
+17. Common Advanced Libraries
+- requests
+- aiohttp
+- asyncio
+- pathlib
+- logging
+- click
+- rich
+- pydantic
+- sqlalchemy
+- fastapi
+- flask
+- pytest
+
+18. C/C++ Integration
+- ctypes
+- cffi
+- pybind11
+- Cython
