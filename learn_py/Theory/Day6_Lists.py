@@ -1,10 +1,10 @@
 
-'''LIST IN PYTHON 
+LIST IN PYTHON 
 Ordered
 Mutable(can be changed)
 Can contain different data types
-'''
-'''
+
+
 number = [] #empty list
 print(type(number))
 
@@ -52,8 +52,8 @@ print(len(l1))
 # move all zeros to the end of the list.
 # find common elements between 2 lists
 # reverse a list using loop
-'''
-'''
+
+
 #SLICING IN LIST - start stop(excluded) step
 numbers = [10,20,30,40,"Hello",True]
 print(numbers[1:4])
@@ -62,8 +62,8 @@ print(numbers[3:])
 print(numbers[:])
 print(numbers[::2])
 print(numbers[::-1])
-'''
-'''
+
+
 #tuple -> immutable(no change)
 t = () #tuple
 print(type(t))
@@ -109,14 +109,14 @@ print(result)
 numbers = (12,43,11,65,87,11,45)
 result = reversed(numbers)
 print(tuple(result))
-'''
+
 
 
 #dunder method - double underscore
-'''
+
 Special methods whose names start and end with __ underscore
-'''
-'''
+
+
 # __init__() -> CONSTRUCTOR/INITIALIZER - runs automatically when an object is created
 class Student:
     def __init__(self,name,age):
@@ -125,7 +125,7 @@ class Student:
 
 s1 = Student("John",23,78)
 s2 = Student("Harry",23,56)
-'''
+
 
 if __name__ == "__main__":
     print("Program Started")

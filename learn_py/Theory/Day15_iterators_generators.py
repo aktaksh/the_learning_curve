@@ -1,11 +1,11 @@
-'''
+
 Iterator is an object that gives you one value at a time, and remembers
 where it is in the sequences.
 __iter__() -> returns the itertor itself
 
 __next__() -> returns the next value
-'''
-'''
+
+
 numbers = [10,20,30]
 it = iter(numbers)
 #print(list(it))
@@ -31,12 +31,12 @@ print("Second: ",second)
 #sending notification
 print("sending notification...")
 
-'''
 
-'''
+
+
 generator: is a simple way to create an iterator that produces values one at a time,
 only when needed.
-'''
+
 
 def numbers():
     yield 10
@@ -74,9 +74,9 @@ squares = {i*i for i in range(1,6)}
 print(squares)
 
 #lambda
-'''
+
 a small anonymous function - create without giving it a normal def name
-'''
+
 def add(a,b):
     return a+b
 

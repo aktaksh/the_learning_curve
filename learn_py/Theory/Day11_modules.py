@@ -1,9 +1,9 @@
 import re #Regex
-'''
+
 It helps you search, match, extract, replace, split and validate text
  based based patterns
-'''
-'''
+
+
 #\d -> any digit from 0 to 9
 #match() checks whether pattern occurs at the beginning of the string
 text = "Python is easy"
@@ -48,16 +48,16 @@ print(re.findall(r"[0-9]",text))
 text = "apple, banana cat64788 dog"
 print(re.findall(r"[^0-9]",text))
 
-'''
-'''
+
+
 * -> 0 or more
 + -> 1 or more
 ? -> 0 or 1
 {n} -> exactly n
 {n,} -> At least n
 {n,m} -> Between n amd m
-'''
-'''
+
+
 text = "Hello@#$ Python!!!"
 result = re.sub(r"[^a-zA-Z]","",text)
 print(result)
@@ -69,19 +69,19 @@ Contact Sam: 4687436874
 """
 numbers = re.findall(r"\d+",text)
 print(numbers)
-'''
+
 
 #fullmatch()
-'''
+
 #pathlib
 create/directory paths
 file exist or not
 rename file
 delete File
 get file info
-and more'''
+and more
 
-'''
+
 from pathlib import Path
 
 #os.path.join("data","marks.txt") #with os
@@ -108,6 +108,6 @@ p.unlink() #delete file
 p.glob("*.txt")
 p.stat().st_size
 p.iterdir() #directory contents
-'''
+
 
 

@@ -10,7 +10,7 @@
 | End a statement | New line | Semicolon: `;` |
 | Define a block | Indentation | Braces: `{ ... }` |
 | Single-line comment | `# comment` | `// comment` |
-| Multi-line comment | `'''text'''` or `"""text"""` (technically a string) | `/* comment */` |
+| Multi-line comment | `text` or `"""text"""` (technically a string) | `/* comment */` |
 | Import/include | `import math` | `#include <cmath>` |
 | Namespace | `math.sqrt(9)` | `std::sqrt(9)` |
 

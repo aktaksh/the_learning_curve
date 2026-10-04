@@ -1,4 +1,4 @@
-# '''import os
+# import os
 # print(os.path.exists("student.txt")) # check files and folders
 # print(os.path.isdir("Day9_functions.py"))
 # print(os.path.isfile("Day9_functions.py"))
@@ -7,18 +7,18 @@
 #     os.mkdir("data")
 
 # os.makedirs("data/students/marks")
-# '''
+# 
 
 # #subprocess - create new process and execute os commands/prgram
 
-# '''
+# 
 # run a shell program
 # run ping
 # open another program
 # send input to  progrm
 # cpture its outputs
 # executes programs
-# '''
+# 
 
 # import subprocess
 # result = subprocess.run("dir",shell=True)
@@ -68,7 +68,7 @@ import threading
 # t = threading.Thread(target=task) #creates a thread object
 # t.start()
 
-'''
+
 import threading
 import time
 def task1():
@@ -89,7 +89,7 @@ t2.start()
 t1.join()
 t2.join()
 print("All tasks completed")
-'''
+
 
 import threading
 def greet(name):
@@ -105,7 +105,7 @@ t.start()
 print(t.is_alive())
 t.join()
 
-'''
+
 Threading              Multiprocessing
 
 Multiple threads      Multiple processes
@@ -113,7 +113,7 @@ Same Process          Separate Processes
 Shared memory         Separate memory spaces
 For I/O bound tasks   CPU-bound tasks
 
-'''
+
 
 #Lock: allows only one thread at a time.
 import threading

@@ -1,14 +1,14 @@
 #Ternary Operator - is a short way to write  if-else codition in one line
-'''
+
 age = int(input("Enter age: "))
 result = "Adult" if age>18 else "Minor"
 print(result)
 
 marks = int(input("Enter marks: "))
 grade = "A" if marks>=80 else "B" if marks>=60 else "C"
-print(grade)'''
+print(grade)
 
-'''
+
 #NUMBER GUESSIG GAME
 import random
 secret_number = random.randint(1,10)
@@ -26,8 +26,8 @@ for attempt in range(1,4):
 else:
     print("You used all 3 attempts!")
     print("The correct number was: ",secret_number)
-'''
-'''
+
+
 #continue -> skip the current iteration
 even_count = 0
 odd_count = 0
@@ -42,14 +42,14 @@ for i in range(1,11):
         odd_count +=1
 print("Even number: ",even_count)
 print("Odd number: ",odd_count)
-'''
-'''
+
+
 for i in range(1,11):
     pass
 
 print("Hello")
-'''
-'''
+
+
 marks = 85
 match marks:
     case x if x>=90:
@@ -60,13 +60,13 @@ match marks:
         print("Good")
     case _:
         print("Fail")
-'''
 
-'''LIST IN PYTHON 
+
+LIST IN PYTHON 
 Ordered
 Mutable(can be changed)
 Can contain different data types
-'''
+
 
 number = [] #empty list
 print(type(number))

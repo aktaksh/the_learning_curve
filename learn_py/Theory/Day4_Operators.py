@@ -1,4 +1,4 @@
-'''
+
 #BITWISE OPERATORS 
 print(25>>3) #towards right shift
 print(25<<3)
@@ -39,8 +39,8 @@ print(user_permission)
 
 if user_permission & WRITE:
     print("USER CAN WRITE")
-'''
-'''
+
+
 Create a Smart E-Commerce Checkout System in Python where the user enters product price, quantity, 
 membership type, coupon code, and payment method. Calculate the subtotal,
  apply membership and coupon discounts, give an additional discount for bulk purchases, 
@@ -48,5 +48,5 @@ membership type, coupon code, and payment method. Calculate the subtotal,
  Use appropriate arithmetic, comparison, logical, assignment, membership, identity, bitwise, and 
  conditional operators, along with if-elif-else and nested if-else, to determine the final payable
    amount and display a complete bill.
-   '''
+   
 

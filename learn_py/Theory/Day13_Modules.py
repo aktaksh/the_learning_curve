@@ -1,6 +1,6 @@
 # concurrent.futures-> used to execute multiple tasks consurrently
 #import concurrent.futures
-'''
+
 Provides 2 main executors:
  1) ThreadPoolExecutor -> For Threads
    a) File operators
@@ -13,18 +13,18 @@ Provides 2 main executors:
   c) Large data processing
   d) CPU Algorithms
     .. more
-'''
+
 
 
 from concurrent.futures import ThreadPoolExecutor
 from concurrent.futures import ProcessPoolExecutor
 import time
 import random
-'''
+
 1) Read student data from files/I-O -> ThreadPoolExecutor
 2) Calculte total,percentage, grade -> CPU-BOUND -> ProcessPoolExecutor
 3) Save the processed result -> file/database -> I-O 0> ThreadPoolExecutor
-'''
+
 #PART 1: I/O 
 def read_student(student_id):
     print(f"Reading dta for student {student_id}")

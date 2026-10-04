@@ -1,4 +1,4 @@
-'''
+
 modules: .py -> function, list, tuple, dict, set, class, objects, file hndlig,  
 TWO TYPES:
   1) PREDEFINED -> already developed
@@ -9,8 +9,8 @@ TWO TYPES:
 
 import random
   2) USER DEFINED
-'''
-'''
+
+
 #1)  PREDEFINED MODULES
 import math
 print(math.pi,math.e)
@@ -27,8 +27,8 @@ print(math.isqrt(25))
 print(math.isqrt(26)) #5.099
 
 #help(math)
-'''
-'''
+
+
 #random
 import random as r
 print(r.random()) #0-1
@@ -54,7 +54,7 @@ print(numbers)
 fruits = ['Apple','Banana','Kiwi','Orange']
 x = r.choice(fruits)
 print(x)
-'''
+
 
 import calendar as c
 print(c.calendar(2026))

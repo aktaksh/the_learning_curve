@@ -1,4 +1,4 @@
-'''identifiers
+identifiers
 oerators
 strings
 list
@@ -18,10 +18,10 @@ numpy
 pandas
 matplotlib
 flask django
-'''
+
 
 #STRINGS
-#String -> is a sequence of character enclosed in (',",''',""")
+#String -> is a sequence of character enclosed in (',",,""")
 #String -> combination of characters
 
 name = "Alice"
@@ -107,7 +107,7 @@ print(chars)
 print(text)
 text = "".join(chars)
 print(text)
-'''
+
 
  1) Find the number of occurrence of a word inside a sentence without substring.
  2) Password:
@@ -126,14 +126,14 @@ output: ********3210
      HELLO
     by shifting every character by 3:
      KHOOR
-'''
 
-'''
+
+
 Python, flask, django, GUI, ML, DS, NLP, GEN AI
 C,C++,JAVA, REACT, ANGULAR,  MERN, MEAN,
 SQL SERVER, MYSQL, MONGODB, ORACLE, ,net full stack, java full stack
 web development , Azure ,Devops, Uipath, powerBI, Linux, Networking ...
-'''
+
 
 
 

@@ -1,11 +1,11 @@
-'''
+
 JSON: JAVASCRIPT OBJECT NOTATION
 Commonly used when working with APIs, Web application, Configuration files, Storing data
-'''
+
 import json
 # python object  -> json data
 
-'''
+
 python   json
 dict ->     object
 list ->     array
@@ -14,8 +14,8 @@ int, float -> number
 True    -> true
 False    -> false
 None    -> null
-'''
-'''
+
+
 #json.dumps() -> converts python obejct into json formatted string
 student = {
     "name": "john",
@@ -34,16 +34,16 @@ print(type(student))
 
 #dump -> converts into json file
 #load -> loads from json file
-'''
+
 import csv
-'''
+
 with open("students.csv","r") as file:
     reader = csv.reader(file)
     next(reader)
     for row in reader:
         print(row)
-'''
-'''
+
+
 with open("students.csv","r") as file:
     reader = csv.reader(file)
     next(reader)
@@ -51,7 +51,7 @@ with open("students.csv","r") as file:
         print("Name: ",row[0])
         print("Marks:",type(row[2]))
         print("Marks:",int(row[2]))
-        '''
+        
 
 #  #deletes all previous data
 # with open("student1.csv",'w',newline="") as file:

@@ -1,10 +1,10 @@
-'''
+
 CONTROL STATMENTS:
   1) CONDITIONAL: if-else, elif, nested if, match, ternary
   2) LOOPING: for, while, for-else, while-else
   3) JUMPING: break, continue, pass
-'''
-'''
+
+
 if 5<2:
     print("hello")
 else:
@@ -18,8 +18,8 @@ if amount <= balance:
     print("REMAINING BALANCE: ",balance)
 else:
     print("INSUFFICIENT BALANCE")
-    '''
-'''
+    
+
 #elif else
 units = int(input("Enter Units: "))
 if units <= 100:
@@ -29,8 +29,8 @@ elif units <= 200:
 else:
     bill = 100 * 5 + 100 * 7 + (units - 200) * 10
 print("ELECTRICITY BILL: ", bill)
-'''
-'''
+
+
 #nested if
 username = input("Enter Username: ")
 if username == "admin":
@@ -41,8 +41,8 @@ if username == "admin":
         print("INCORRECT PASSWORD!")
 else:
     print("INCORRECT USERNAME!")
-'''
-'''
+
+
 Mini Project: ATM Banking System
 Scenario
 
@@ -65,6 +65,6 @@ Amount must not exceed the account balance.
 For deposit:
 Amount must be greater than 0.
 Display the updated balance after a successful transaction.
-'''
+
 
 
