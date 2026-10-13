@@ -123,3 +123,32 @@ Class E                                                  Range 240 to 255
 128.10.5.9 and 128.0.5.10 are same networks - needs only hub or  switch
 
 IP vs4 address == 4.3 bilions
+
+UTP is  common and STP i s shielding
+
+Copper -- 
+
+Typical twisted pair ethernet - max 100 mtrs
+
+STP adds shielding
+
+category rating / distance transceiver capability
+
+Autonegotiating be enabled.
+
+Fibre -
+
+specs when in multimode - core wider , shorter length , used in datahall or building
+
+specs in single mode - thin core, long , expensive
+
+Fault signautures - down/down cabpe
+
+increasing CRC / input errors happens due ot cirruption cabling optic or duplex problem
+
+collisions - duplex mismatch or legacy shared media.
+Runts - frames below legal minimum MTU 
+Giants - above MTU size
+output drops - egress congestion
+
+Show interface status
