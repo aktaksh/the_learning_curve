@@ -1,4 +1,5 @@
-Class A - 10.0.0./8
+
+STP Class A - 10.0.0./8
 Class B - 172.0.0.0/16
 Class C - 192 to  198.168.0.0/16
 
@@ -36,3 +37,18 @@ APIPA - Auto priate IP addressing
 subnet mask -  network portion + host range
 eg 192.168.1.1 / 255.255.255.0  -- Then 192.168.1 is network portion + 0 - host portion
 
+## OSI layers --
+App , Presentation , Session, Transport, network, data link, physical
+
+Network design layer -- 
+1. Access L2- point where the device finds it's network, ca be router or switch but ideally should be L2 - gives speed too
+2. Distribution L3 - When there multiple switch with HA and cabling is a mess. happens at OSI layer 3. Uses Multi layer swicth like 3560-24PS  
+3. Core layer -- Solution which combines all musltilayer switches - provides speed not security
+
+LACP PAP protocol for HA
+OPOF - one point of failure.
+STP - spanning tree protocol esp when second HA cbale is connected. Hence STP is mandated.
+ Orange icon in cable in CPT is  building spaning tree.
+All cables are bundles in etherchannel.
+
+create STP and loops.
