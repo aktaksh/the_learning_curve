@@ -1,54 +1,49 @@
+# CCNP class 1 — addressing and spanning tree refresher
 
-STP Class A - 10.0.0./8
-Class B - 172.0.0.0/16
-Class C - 192 to  198.168.0.0/16
+## IPv4 essentials
+IPv4 has 32 bits split into four 8-bit octets. Each octet holds 0–255; the complete space has 2^32 addresses.
 
+- /16 leaves 16 host bits: 65,536 addresses, normally 65,534 usable hosts.
+- Conventional subnet usable-host counts exclude network and broadcast; /31 and /32 have special uses.
+- Private ranges: 10.0.0.0/8, 172.16.0.0/12 and 192.168.0.0/16.
+- Historical classes and private ranges are different concepts. Modern routing uses CIDR.
 
+## Loopback, TTL and APIPA
+127.0.0.0/8 is loopback. Pinging it tests the local stack, not the NIC or cable. IPv4 TTL is an 8-bit field decremented by routers to prevent indefinite loops.
 
+In ping output, 56(84) bytes describes sizes, not hops. ttl=64 is the received TTL value.
 
-IPv0 to IPv15 was done
-IPv4 - each ocetet is 32 bit
-2^8 = 256 IP == 0 to 255 ips
-2^ == 32 billion ip
-2^16 = 65536IP s-- usable 65534
+APIPA means Automatic Private IP Addressing and uses IPv4 link-local addresses from 169.254.0.0/16, subject to selection rules. A link-local address can indicate DHCP failure; it is not the DHCP server address.
 
+## OSI and campus roles
+OSI layers: Application → Presentation → Session → Transport → Network → Data Link → Physical.
 
-011111 = 0x2 + 1X
-you canot use first and last ip 
-Class	Leading bits	First octet	Default mask
-A	0xxxxxxx	0–127	/8
+Access connects endpoints; distribution aggregates access and often applies routing/policy; core provides resilient transport. These are design roles, not absolute OSI-layer restrictions.
 
-# Loop
+## STP election and port roles
+STP prevents Layer-2 loops while retaining physical redundancy.
 
+1. Lowest bridge ID wins the root election: priority/system ID before MAC.
+2. Non-root switches select a root port using the best path information.
+3. Each segment selects a designated port; redundant paths become non-forwarding as required.
 
-loop back address 127.0.0.1 ping self to check nic card
-56 hops is msax hops TL control the life to prevent loop foever
-127.0.0.(1-254) - starting wiht 127 then its loop back and all can ping  
+Base priority defaults to 32768. PVST-style VLAN 1 can display 32769 because the extended system ID includes the VLAN number. The MAC address breaks a bridge-ID tie after priority.
 
-ping 127.0.0.2
-PING 127.0.0.2 (127.0.0.2) 56(84) bytes of data.
-64 bytes from 127.0.0.2: icmp_seq=1 ttl=64 time=1.44 ms
-64 bytes from 127.0.0.2: icmp_seq=2 ttl=64 time=0.082 ms
+Root-port comparison uses root ID, total root-path cost, sender bridge ID and sender port ID, with local port ID as the final tie-break when necessary. A cost of 19 is a legacy 100-Mbit/s example, not 19 hops.
 
-# APIPA 
-169.254.x.x -- DHCP server ip if it fails
-APIPA - Auto priate IP addressing
-# subnet mask
-subnet mask -  network portion + host range
-eg 192.168.1.1 / 255.255.255.0  -- Then 192.168.1 is network portion + 0 - host portion
+Root-bridge ports on normal active segments are designated. RSTP provides faster convergence with defined roles and state transitions.
 
-## OSI layers --
-App , Presentation , Session, Transport, network, data link, physical
+## EtherChannel and checks
+LACP negotiates aggregation; PAgP is a distinct Cisco protocol. EtherChannel bundles compatible links logically. One flow generally follows one member selected by hashing, rather than using all members at once.
 
-Network design layer -- 
-1. Access L2- point where the device finds it's network, ca be router or switch but ideally should be L2 - gives speed too
-2. Distribution L3 - When there multiple switch with HA and cabling is a mess. happens at OSI layer 3. Uses Multi layer swicth like 3560-24PS  
-3. Core layer -- Solution which combines all musltilayer switches - provides speed not security
+```text
+show spanning-tree
+show spanning-tree vlan 1
+show etherchannel summary
+```
 
-LACP PAP protocol for HA
-OPOF - one point of failure.
-STP - spanning tree protocol esp when second HA cbale is connected. Hence STP is mandated.
- Orange icon in cable in CPT is  building spaning tree.
-All cables are bundles in etherchannel.
+Check root ID, bridge ID, cost, role and state. In a four-switch square lab, choose an intended root and confirm which redundant port stops forwarding. Configuration changes can reconverge the network.
 
-create STP and loops.
+SPOF means single point of failure. A redundant cable without loop prevention can create a broadcast storm.
+
+Reference: [Cisco STP guide](https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/stp/stp-configuration-guide/m-stp.html).

@@ -1,1 +1,23 @@
-Pytest for API test Classesfoir better programs.
+# pytest and API tests — quick refresher
+
+## Essentials
+- Name test files test_*.py and test functions test_*.
+- Use assert for expected outcomes.
+- Use fixtures for shared setup and cleanup.
+- Test classes can group related tests; they are optional and do not inherently improve a program.
+
+## Minimal example
+```python
+def test_addition():
+    assert 2 + 3 == 5
+```
+
+```bash
+python -m pytest -q
+python -m pytest -k addition -v
+```
+
+-q gives compact output; -k selects tests by name expression.
+
+## API checks
+Verify status, response body/schema, headers and error behaviour. Mock external HTTP calls in unit tests; run integration tests against a controlled service with timeouts. Avoid embedding credentials in tests or logs.

@@ -1,317 +1,118 @@
-syntax.cpp
-if (condition) {
-  // block of code to be executed if the condition is true
-}
+# C++ syntax and memory — quick refresher
+
+## Minimal program and input
+```cpp
 #include <iostream>
-using namespace std;
-
-int main() {
-  cout << "Hello World!";
-  return 0;
-}
-// This is a comment
-cout << "Hello World!";
-
-int - stores integers (whole numbers), without decimals, such as 123 or -123
-double - stores floating point numbers, with decimals, such as 19.99 or -19.99
-char - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
-string - stores text, such as "Hello World". String values are surrounded by double quotes
-bool - stores values with two states: true or false
-
-
-int x, y, z;
-x = y = z = 50;
-cout << x + y + z;
-
-int x = 5, y = 6, z = 50;
-cout << x + y + z;
-
-float f1 = 35e3;
-double d1 = 12E4;
-cout << f1;
-cout << d1;
-
-
-bool isCodingFun = true;
-bool isFishTasty = false;
-cout << isCodingFun;  // Outputs 1 (true)
-cout << isFishTasty;  // Outputs 0 (false)
-
-
-char a = 65, b = 66, c = 67;
-cout << a;
-cout << b;
-cout << c;
-
-
-// Include the string library
 #include <string>
 
-// Create a string variable
-string greeting = "Hello";
-
-// Output string value
-cout << greeting;
-
-auto x = 5; // x is automatically treated as int
-
-
-// Create variables of different data types
-int items = 50;
-double cost_per_item = 9.99;
-double total_cost = items * cost_per_item;
-char currency = '$';
-
-// Print variables
-cout << "Number of items: " << items << "\n";
-cout << "Cost per item: " << cost_per_item << currency << "\n";
-cout << "Total cost = " << total_cost << currency << "\n";
-
-
-int sum1 = 100 + 50;        // 150 (100 + 50)
-int sum2 = sum1 + 250;      // 400 (150 + 250)
-int sum3 = sum2 + sum2;     // 800 (400 + 400)
-/*
-
-C++ divides the operators into the following groups:
-
-Arithmetic operators
-Assignment operators
-Comparison operators
-Logical operators
-Bitwise operators
-
-
-Operator	Example	Same As	Try it
-=	x = 5	x = 5	
-+=	x += 3	x = x + 3	
--=	x -= 3	x = x - 3	
-*=	x *= 3	x = x * 3	
-/=	x /= 3	x = x / 3	
-%=	x %= 3	x = x % 3	
-&=	x &= 3	x = x & 3	
-|=	x |= 3	x = x | 3	
-^=	x ^= 3	x = x ^ 3	
->>=	x >>= 3	x = x >> 3	
-<<=	x <<= 3	x = x << 3
-
-Operator	Name	Description	Example	Try it
-&& 	Logical and	Returns true if both statements are true	x < 5 &&  x < 10	
-|| 	Logical or	Returns true if one of the statements is true	x < 5 || x < 4	
-!	Logical not	Reverse the result, returns false if the result is true	!(x < 5 && x < 10)	
-
-
-*/
-
-
-int result1 = 2 + 3 * 4;     // 2 + 12 = 14
-int result2 = (2 + 3) * 4;   // 5 * 4 = 20
-
-cout << result1 << "\n";
-cout << result2 << "\n";
-
-
-string firstName = "John ";
-string lastName = "Doe";
-string fullName = firstName + lastName;
-cout << fullName;
-
-
-string firstName = "John";
-string lastName = "Doe";
-string fullName = firstName + " " + lastName;
-cout << fullName;
-
-
-if (20 > 18) {
-  cout << "20 is greater than 18";
+int main() {
+    int x{};                       // initialise before use
+    if (!(std::cin >> x)) return 1;
+    std::cout << x << '\n';
 }
+```
 
-int time = 16;
+Do not read an uninitialised local int. Identifiers are case-sensitive; prefer ordinary descriptive names and avoid reserved underscore forms.
 
-if (time < 12) {
-  cout << "Good morning.";
-} else if (time < 18) {
-  cout << "Good day.";
+## Types and initialisation
+| Type | Reminder |
+| --- | --- |
+| int | Integer; width is implementation-dependent |
+| double | Floating point |
+| char | Character; sizeof(char) is always 1 |
+| bool | true/false; default stream output is 1/0 |
+| std::string | String value with automatic resource management |
+| auto | Deduces a type from the initializer |
+
+Common platforms use 4-byte int/float and 8-byte double, but do not treat those sizes as universal. Use sizeof and fixed-width integer types when appropriate. ASCII-based execution encodings map 65 to A; this is not a universal character-encoding rule.
+
+## Operators
+- Arithmetic: +, -, *, /, %. Integer division truncates toward zero.
+- Assignment: =, +=, -=, *=, /=, %=.
+- Comparison: ==, !=, <, <=, >, >=.
+- Logical: &&, ||, !. && and || short-circuit.
+- Bitwise: &, |, ^, ~, <<, >>.
+- Precedence: 2 + 3 * 4 is 14; (2 + 3) * 4 is 20.
+
+Avoid invalid shift counts, division by zero and signed overflow.
+
+## Conditions and loops
+```cpp
+int hour = 16;
+std::string greeting = hour < 12 ? "Morning" : "Later";
+
+if (hour < 12) {
+    std::cout << "Morning";
+} else if (hour < 18) {
+    std::cout << "Afternoon";
 } else {
-  cout << "Good evening.";
+    std::cout << "Evening";
 }
 
-// shorthand :--
-int time = 20;
-string result = (time < 18) ? "Good day." : "Good evening.";
-cout << result;
+for (int i = 0; i < 3; ++i) std::cout << i;
+while (hour > 0) --hour;
+do { ++hour; } while (hour < 1);
 
-int a = 200;
-int b = 33;
-int c = 500;
-
-if (a > b && c > a) {
-  cout << "Both conditions are true";
+switch (hour) {
+    case 1: std::cout << "One"; break;
+    default: std::cout << "Other"; break;
 }
+```
 
-switch(expression) {
-  case x:
-    // code block
-    break;
-  case y:
-    // code block
-    break;
-  default:
-    // code block
-}
+A do/while executes its body at least once. Missing break can fall through to the next switch case. Prefer if/else over deeply nested ternaries.
 
-int day = 4;
-switch (day) {
-  case 1:
-    cout << "Monday";
-    break;
-  case 2:
-    cout << "Tuesday";
-    break;
-  case 3:
-    cout << "Wednesday";
-    break;
-  case 4:
-    cout << "Thursday";
-    break;
-  case 5:
-    cout << "Friday";
-    break;
-  case 6:
-    cout << "Saturday";
-    break;
-  case 7:
-    cout << "Sunday";
-    break;
-}
-// Outputs "Thursday" (day 4)
+## Strings, arrays, pointers and references
+```cpp
+std::string full = std::string("John") + " Doe";
+int values[] = {1, 2, 3, 4};
+int x = 5;
+int* pointer = &x;       // stores an address
+int& reference = x;     // alias bound to x
+*pointer = 6;           // updates x
+reference = 7;          // also updates x
+```
 
+Pointers can be null or reassigned. References must be initialised and do not reseat. A function parameter of type int& can modify the caller's object. An array and a pointer are not the same type.
 
-int countdown = 3;
+## Structs, classes, unions and aliases
+```cpp
+struct Student {
+    std::string name;
+    int age{};
+};
 
-while (countdown > 0) {
-  cout << countdown << "\n";
-  countdown--;
-}
+class Counter {
+public:
+    void increment() { ++value_; }
+private:
+    int value_{};
+};
 
-cout << "Happy New Year!!\n";
+union Data {
+    int i;
+    float f;
+};
 
-do {
-  // code block to be executed
-}
-while (condition);
+using Count = unsigned int;
+```
 
+A struct is a record type, not a database. Struct members default to public; class members default to private. Union members share storage; track the active member. using and typedef introduce type aliases. Templates generate code for parameterised types or values; macros perform preprocessing substitution.
 
-#include <iostream>
+## Memory and ownership
+- Local automatic objects are destroyed at scope exit. Dynamic storage can outlive a function.
+- Prefer containers and RAII owners such as std::vector and std::unique_ptr.
+- Match new with delete, new[] with delete[], and malloc with free.
+- A dangling pointer refers to an object whose lifetime ended. Double deletion and use-after-free are invalid.
+- A leak loses the ability to release owned resources. It can contribute to memory exhaustion.
+- std::map is an ordered associative container; it is not a synonym for heap memory.
+- Placement new constructs an object in existing storage; storage ownership remains a separate responsibility.
 
-using namespace std;
-    
-    int main() {
-        int x ;
-        cout << x << "\n";
-        cin >> x ;
-        cout << x << endl;
-        cout << x << endl;
-        
-    }
+Linked lists, trees and graphs often use dynamic storage. Pointer chasing can hurt cache locality; contiguous arrays/vectors can be better for hot paths.
 
-    
+## Stream performance
+```cpp
+std::ios_base::sync_with_stdio(false);
+std::cin.tie(nullptr);
+```
 
- Derived Data Types in C++
- 1. AArrya 
- 2. Pointers
- 3. rference
- 4. fucntion
-
- Array - 
- arr1 = {1,2,3,4}
-
- pointers. - points to the memory address value
- int* i = &x
-
- reference - point to the memory location call by ref
- x = &y 
-
-
-User defined datatypes: --
-
-Class 
-Structure
-union
-typedef
-using
-
-structure - to create a table or DB
- struct student {
-  string name: kitty
-  int age: 29;
-
- };
-
-
-
-class - 
-category which incorporated all function and data in single unit
-
-class student {
-  punlic:
-   string name;
-   int age; 
-   };
-
-Union
-
-union allows member to share same memlocation
- union Data{
-  int i;
-  float f;
- };
-
-
-
-sixze of datatypes 
-char 1 byte
-bool 1 byte
-float 4
-int 4 
-double 8
-
-// name canc only contain a underscore in special cahr
-// start with underscore
-// case sensitive
-//garbagee value 
-
-// Ternary operator
-
-#include <bits/stdc++.h>
-
-using namespace std;
-int main()
-{    
-    int x = 0;
-cout << ((x < 0) ? "less than zero" : ((x == 0) ? "itz zero" : "not zero" )); # nested ternary
-}
-
- # Heap emmory/Dynamic / Malloc  -- Read dynamic memory 
- 
- map - is a type of heap memory , dictionary
- Memoory leak saving. OOM/Memory exceeded error
- > delete ptr 
- Memory allocated with new should be deleted else it will block memory space
- linked list , tree, graph, dynamic arrays
-
- #When needed beyond function
- # Dangling pointer -- points to deallocated memory
- # Double deletion error.
- # placemnent new object in allocated memory
-
- # Use of Template and Define
- > ios_base::sync_with_stdio(false);cin.tie(0);cout.tie(0); --- 
- 
-
-
-
-
-
-
+These settings decouple C++ streams from C stdio synchronisation and untie input from automatic output flushing. Flush prompts explicitly when needed; avoid assuming safe ordering when mixing C and C++ I/O.

@@ -1,0 +1,22 @@
+# DPDK — quick refresher
+
+## Purpose and packet path
+DPDK provides libraries and drivers for fast packet processing. Poll-mode drivers commonly let an application poll NIC RX/TX queues in user space, reducing per-packet interrupt overhead.
+
+Typical UDP frame:
+Ethernet → IPv4/IPv6 → UDP → application payload
+
+## Queues and memory
+- RXQ receives packets; TXQ submits packets for transmission.
+- NIC descriptor rings describe buffers in host memory; NIC DMA transfers packet data.
+- DPDK commonly uses mbufs and memory pools to manage packet buffers.
+- Assign queue ownership explicitly. Cross-core sharing and remote NUMA memory can increase latency.
+- Polling consumes CPU even at low traffic. Burst size trades throughput against waiting time.
+
+## l2fwd
+l2fwd is a DPDK sample Layer-2 forwarding application. It is not a complete IP router or a production trading application.
+
+## Checks
+Confirm supported NIC/driver, queue configuration, CPU affinity, NUMA locality, packet counters and memory availability. Many deployments use hugepages, but requirements vary. Kernel bypass does not mean the kernel has no role in setup or device management.
+
+Reference: https://doc.dpdk.org/guides/prog_guide/poll_mode_drv.html

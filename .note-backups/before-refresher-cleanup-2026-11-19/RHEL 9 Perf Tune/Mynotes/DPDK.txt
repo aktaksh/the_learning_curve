@@ -1,0 +1,4 @@
+DPDK - 
+TXQ RXQ - in NIC 
+thernet - ip - udp - payload
+l2fwd is DPDK specific app

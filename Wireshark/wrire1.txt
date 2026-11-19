@@ -1,11 +1,20 @@
-unix windows
-live packets network interface
-openfiles
-coloredones
-input formts : pcap pcpang
-oracle snoop atmsbnoop
-pcap pcapng 
-cap - windows
-Wirshark cannot --
-it is not intrusion detection system
-it is nto paket manipulator
+# Wireshark — quick refresher
+
+## Purpose
+Wireshark captures and analyses packets on supported platforms, including Linux and Windows. It can inspect live traffic or saved captures such as pcap and pcapng.
+
+## Workflow
+1. Choose the interface that carries the traffic.
+2. Apply a capture filter when collecting; use a display filter while analysing.
+3. Inspect protocol fields, timing, retransmissions and stream relationships.
+4. Correlate observations with host and NIC counters.
+
+## Filters
+Capture filter example: udp port 319
+Display filter example: udp.port == 319
+TCP analysis example: tcp.analysis.retransmission
+
+Capture and display filters use different syntaxes. A display filter does not remove packets from the saved capture.
+
+## Limits
+Wireshark is primarily a protocol analyser, not a standalone IDS or packet generator. Colour rules aid reading; they are not proof of a fault. Capture drops and timestamp quality affect conclusions. Ordinary OS captures may miss kernel-bypass traffic.

@@ -1,12 +1,19 @@
-client error code :
-400 bad requets , bad syntax etc
-401 - unauthorized
-403 - forbidden
-429 - too many requests
+# HTTP status codes — quick refresher
 
-server error codes
-500 internal server error
-502 bad gateway
-503 service unavailable
-504 Gateay timeout.
+## Client/request-side responses
+| Code | Meaning | First check |
+| --- | --- | --- |
+| 400 | Bad Request | Syntax, payload and validation requirements |
+| 401 | Unauthorized | Missing, expired or invalid authentication |
+| 403 | Forbidden | Permissions or policy; authentication alone may not resolve it |
+| 429 | Too Many Requests | Rate limits, Retry-After and backoff |
 
+## Server-side responses
+| Code | Meaning | First check |
+| --- | --- | --- |
+| 500 | Internal Server Error | Application exception and request correlation ID |
+| 502 | Bad Gateway | Invalid response from an upstream service |
+| 503 | Service Unavailable | Capacity, maintenance or unavailable dependencies |
+| 504 | Gateway Timeout | Upstream response exceeded the gateway timeout |
+
+Distinguish the responding layer: application, proxy, gateway or load balancer. Retry only when safe for the operation; use bounded backoff and consider idempotency for writes.
