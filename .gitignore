@@ -1,0 +1,7 @@
+.DS_Store
+__pycache__/
+*.pyc
+.reorganization_backup/
+.reorganization_stage/
+.note-backups/
+99_build_artifacts/

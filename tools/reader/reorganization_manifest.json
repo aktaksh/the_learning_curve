@@ -1,0 +1,802 @@
+{
+  "reader_theme.js": {
+    "destination": "tools/reader/reader_theme.js",
+    "sha256": "e21009b7c1c91d1a8457e6319b089fd22613daca5242521ee7ec5909c0097aa8"
+  },
+  "reader_content.js": {
+    "destination": "tools/reader/reader_content.js",
+    "sha256": "f74f2aca9f726bce56668dfc7feb04f04a36a2a0df8c7bc24ba2048d26a87bfa"
+  },
+  "reader_content.css": {
+    "destination": "tools/reader/reader_content.css",
+    "sha256": "ef406bd08931eb899cc0cb7d60353725130cd5b17e6f90147cd1eb8f0de1f7ef"
+  },
+  "reader_support.py": {
+    "destination": "tools/reader/reader_support.py",
+    "sha256": "d3b0eb3e1e1c3b60b24275f1b0bb01794872f149e6850f8a88ecab101c240832"
+  },
+  "reader_theme.css": {
+    "destination": "tools/reader/reader_theme.css",
+    "sha256": "1f2d69750ef72ad4dcb0381101900f3667e3d0ab9eacff64b342a0b958434d4d"
+  },
+  "Dco": {
+    "destination": "98_archive/placeholders/empty_dco",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "learn_py/titanic.xlsx": {
+    "destination": "03_python/titanic.xlsx",
+    "sha256": "4febb6680a055c220be04c6a9a8203194d3273d667142feecfd16689cbcf0ac9"
+  },
+  "learn_py/wordrepeat.py": {
+    "destination": "03_python/wordrepeat.py",
+    "sha256": "2d1b68fc21d3f8e59c76599ef6ad685ea66182b61beaa803fd7a3488f7847e0f"
+  },
+  "learn_py/CSV-12-july-2025.py": {
+    "destination": "03_python/CSV-12-july-2025.py",
+    "sha256": "7e03fffa51ae42e4dbdbc80615b9a24802e206aeeb3751a042ac2c0580ed74db"
+  },
+  "learn_py/Theory/Day21_polymorphism_abstraction.py": {
+    "destination": "03_python/01_lessons/Day21_polymorphism_abstraction.py",
+    "sha256": "17d3f5fdd637cfebac65bf13932cda4e1ae2fc5c379d7fe82bc53ed57101b94a"
+  },
+  "learn_py/Theory/Day14_modules.py": {
+    "destination": "03_python/01_lessons/Day14_modules.py",
+    "sha256": "e8407c1188de09ba7ea4d6b8b1a24bb4d74f43509aa6cb7033c8546ea20d10ca"
+  },
+  "learn_py/Theory/Day11_modules.py": {
+    "destination": "03_python/01_lessons/Day11_modules.py",
+    "sha256": "88d53c032591ab90865d929e6d95ca69539a6ed78758f3f81ddf5e6a17d77911"
+  },
+  "learn_py/Theory/Day7_practice_questions.py": {
+    "destination": "03_python/01_lessons/Day7_practice_questions.py",
+    "sha256": "29efd441d1ca7ba76eacf768df30f1ce22f8f9b4e9ab71480db1b2665c0fbc90"
+  },
+  "learn_py/Theory/Day8_strings.py": {
+    "destination": "03_python/01_lessons/Day8_strings.py",
+    "sha256": "55acb0a5efec26b081da87a0d1b621749607b3f3270377351bf9bc22ae8438e6"
+  },
+  "learn_py/Theory/Day20_21_Inheritance.py": {
+    "destination": "03_python/01_lessons/Day20_21_Inheritance.py",
+    "sha256": "fe169e0a00ce5a513bb20b45b9cc879ec8c59dfd058e54844af99cb5658cb9ec"
+  },
+  "learn_py/Theory/Python_broucher1.pdf": {
+    "destination": "03_python/01_lessons/python_broucher1.pdf",
+    "sha256": "739cc780fd62385e2167afd880a1b7f3aa017d2fff6b6a21743a1787370b1059"
+  },
+  "learn_py/Theory/Day4_Operators.py": {
+    "destination": "03_python/01_lessons/Day4_Operators.py",
+    "sha256": "92a14197bc9d0a5e7909e86c1757e5824747f0473150b1b7d9df543fa8e367a9"
+  },
+  "learn_py/Theory/Day3_Operators.py": {
+    "destination": "03_python/01_lessons/Day3_Operators.py",
+    "sha256": "0cdd09e1407985180ffa95b5b3f240eb7a07e08e19076374fd67d7f7d575962a"
+  },
+  "learn_py/Theory/Day11_Modules2.py": {
+    "destination": "03_python/01_lessons/Day11_Modules2.py",
+    "sha256": "62ce30deaa46f0345899c83668689c95bdbe0e42fa667dcc45ea4e0c3f62ce76"
+  },
+  "learn_py/Theory/Day13_Modules.py": {
+    "destination": "03_python/01_lessons/Day13_Modules.py",
+    "sha256": "4fbfe76acfa0f76587997a41f47ccc69eefda424a27208eba09265ec8f77b408"
+  },
+  "learn_py/Theory/Day19_.py": {
+    "destination": "03_python/01_lessons/Day19_.py",
+    "sha256": "c600442f2f393f05ff2677b71e5e08e5f17df3662fff697821e8f05ebbab5d4f"
+  },
+  "learn_py/Theory/Day4_ControlStatements1.py": {
+    "destination": "03_python/01_lessons/Day4_ControlStatements1.py",
+    "sha256": "67a57bca1e37e8071a4574f809931dfb3a6648957402649de63802482463625a"
+  },
+  "learn_py/Theory/Day6_Lists.py": {
+    "destination": "03_python/01_lessons/Day6_Lists.py",
+    "sha256": "a34e9a9a71e3f0166891a28b4e7f133678970ebaada40c5441e3e8cd51e52a3f"
+  },
+  "learn_py/Theory/Day10_modules.py": {
+    "destination": "03_python/01_lessons/Day10_modules.py",
+    "sha256": "096e07ec2f28741fd1f69a33eb778731b9c1d8f2aa31949ca3339d49194184e4"
+  },
+  "learn_py/Theory/Dataframe-12jul2025.py": {
+    "destination": "03_python/01_lessons/Dataframe-12jul2025.py",
+    "sha256": "f563ca61ef7cb4920a95fea29f37f3ed55aab9e5a2db4826e8c84d656baeb319"
+  },
+  "learn_py/Theory/Day5_controlstatements.py": {
+    "destination": "03_python/01_lessons/Day5_controlstatements.py",
+    "sha256": "fda6cebba93103eba602354fce87ce56d230b99d5c557b8ca1822897d25eaf3d"
+  },
+  "learn_py/Theory/Day12_Modules.py": {
+    "destination": "03_python/01_lessons/Day12_Modules.py",
+    "sha256": "f29c3cf5a20d1a177221bd474be055d71c090108c648bd0a73ca7aba7220d7fb"
+  },
+  "learn_py/Theory/Day7_sets_dictionary.py": {
+    "destination": "03_python/01_lessons/Day7_sets_dictionary.py",
+    "sha256": "8bb41f7cd54bc752c93f5383d6619895f2338271894d364ab6703a97d1ac11ea"
+  },
+  "learn_py/Theory/Day9_functions.py": {
+    "destination": "03_python/01_lessons/Day9_functions.py",
+    "sha256": "31515bb9e036c1d9aef454bc0224a961079494b9bf2af8cf7b292e0179fb2916"
+  },
+  "learn_py/Theory/Syllabus_python.txt": {
+    "destination": "03_python/01_lessons/syllabus_python.txt",
+    "sha256": "5b797d606a7a59011ed648c38f8f4417ee11238a4ccd9ae44875a6f9e30d15a5"
+  },
+  "learn_py/Theory/pandas_numpy_DS.ipynb": {
+    "destination": "03_python/01_lessons/pandas_numpy_DS.ipynb",
+    "sha256": "15f92e14af65bc51fe32bd6b8ea5b43bd0c9a18933124240917c20060280a49c"
+  },
+  "learn_py/Theory/C++ vs Python.md": {
+    "destination": "03_python/01_lessons/cpp_vs_python.md",
+    "sha256": "7990aa78595ac713de84c46aea0ea5a9fc58dbd9f5323ff2f7ab7716fab36663"
+  },
+  "learn_py/Theory/Day15_iterators_generators.py": {
+    "destination": "03_python/01_lessons/Day15_iterators_generators.py",
+    "sha256": "369441e7f3d3b34b2e33e47a0774df8521a3ba4633aa47cdf0126d157a15bce4"
+  },
+  "learn_py/docs/python-cheatsheet.pdf": {
+    "destination": "03_python/00_study_routes/python_cheatsheet.pdf",
+    "sha256": "a06892d989bfd0a2ab1b40cb3d4936567d50b0b347cfd09681dee184a5fcae57"
+  },
+  "learn_py/docs/syllabus_python.md": {
+    "destination": "03_python/00_study_routes/syllabus_python.md",
+    "sha256": "5b49428690d61a173cd790f654654c2df2c5f93567db4e67cc2d626a0e09af92"
+  },
+  "learn_py/docs/Syllabus-hft.md": {
+    "destination": "03_python/00_study_routes/syllabus_hft.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "learn_py/docs/Syllabus C++ .md": {
+    "destination": "03_python/00_study_routes/syllabus_cpp.md",
+    "sha256": "57947052ed42b637cdba13be875bb50f694f819b81cc2fc108a3be4df14f7913"
+  },
+  "learn_py/docs/squarepoint_python_interview_preparation.md": {
+    "destination": "03_python/00_study_routes/squarepoint_python_interview_preparation.md",
+    "sha256": "669245269a0104eb093a8ff2f2884c1ce05ebd1eae349c17499a61bb5e929e55"
+  },
+  "learn_py/my-notes/disk.py": {
+    "destination": "03_python/my-notes/disk.py",
+    "sha256": "7dd1f977dff6a4ea065f38b7f5dee6a48ed6807c6f3a2f254a170e34208f61e7"
+  },
+  "learn_py/my-notes/modules_list.txt": {
+    "destination": "03_python/my-notes/modules_list.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "learn_py/my-notes/binarytree.ipynb": {
+    "destination": "03_python/my-notes/binarytree.ipynb",
+    "sha256": "d90e2d9460992ece0c3cb89b810ae5e1c39437bead039856821b9e1253a56ae8"
+  },
+  "learn_py/my-notes/19th july.ipynb": {
+    "destination": "03_python/my-notes/19th july.ipynb",
+    "sha256": "9141089719f2e23349ec4b1e9b2b7322aeb0586c8680c52c6a22df873f542e77"
+  },
+  "learn_py/my-notes/LeetRomantointeger.py": {
+    "destination": "03_python/my-notes/LeetRomantointeger.py",
+    "sha256": "e6df5956a4b0f1e2ba1b7ec7bccbd86f734d3e0ceb4879477877b8d9ee077ea9"
+  },
+  "learn_py/my-notes/D2 tasks.ipynb": {
+    "destination": "03_python/my-notes/D2 tasks.ipynb",
+    "sha256": "b8d81fcfb8c28e6af1af0ab2ebf82f0197bbe1552fe044e66c0591bb2b8b88a4"
+  },
+  "learn_py/my-notes/log-parser.ipynb": {
+    "destination": "03_python/my-notes/log-parser.ipynb",
+    "sha256": "d3e2baee944ee99a82eb53cff4bb5e1a754d6c14b04eb82f07d519aa392c0f74"
+  },
+  "learn_py/my-notes/Firstclassvars.ipynb": {
+    "destination": "03_python/my-notes/Firstclassvars.ipynb",
+    "sha256": "e2e98ec2da508e808fa6724efd96a4fe93d4b1ba530275128783af8ab4bdaf3b"
+  },
+  "learn_py/my-notes/multiple args.py": {
+    "destination": "03_python/my-notes/multiple args.py",
+    "sha256": "d82a35e1c56d4f00fb58add76532228a67d69e490c502b050b62008cea73ce24"
+  },
+  "learn_py/my-notes/main-1.py": {
+    "destination": "03_python/my-notes/main-1.py",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "learn_py/my-notes/test.py": {
+    "destination": "03_python/my-notes/test.py",
+    "sha256": "f41b3a1ddbb0707fd0860adc92e2b5e37e527d530f0d905a993bb07fb7989f64"
+  },
+  "learn_py/my-notes/OS.ipynb": {
+    "destination": "03_python/my-notes/OS.ipynb",
+    "sha256": "09eab180f3f6c2ee3428d872754bd20259e1cc89b71ad597193865c8ebbcc7b8"
+  },
+  "learn_py/my-notes/D3-D4-task.ipynb": {
+    "destination": "03_python/my-notes/D3-D4-task.ipynb",
+    "sha256": "d8fb775311cb22835262ec0c41a0476ec973bed0b02a36c59ca9bebce93abf86"
+  },
+  "learn_py/my-notes/Twosum.py": {
+    "destination": "03_python/my-notes/Twosum.py",
+    "sha256": "aa2673209f3d4972074ac007c521ea13717eb47b4f52d333ae6539c29f60f08f"
+  },
+  "learn_py/my-notes/loops.py": {
+    "destination": "03_python/my-notes/loops.py",
+    "sha256": "c612b0b77e1f122e4bf15ea130581cdbd318e2aead7b95ea0951b0ecfb973654"
+  },
+  "learn_py/my-notes/potymorphism.ipynb": {
+    "destination": "03_python/my-notes/potymorphism.ipynb",
+    "sha256": "8f61060c925401b7b0bf88c2ff5e90982fc2ca8e2155793eca9184a61ada5f40"
+  },
+  "learn_py/my-notes/server_socket.py": {
+    "destination": "03_python/my-notes/server_socket.py",
+    "sha256": "400e0139b833aa0ae741430b4e784aae29a4e5db4b28c3b487e3c6de6e772626"
+  },
+  "learn_py/my-notes/file.py": {
+    "destination": "03_python/my-notes/file.py",
+    "sha256": "10362983c501da8748ba159911de8884baba5b7e74d55b5ec2577b8e1510121e"
+  },
+  "learn_py/my-notes/inheritance.ipynb": {
+    "destination": "03_python/my-notes/inheritance.ipynb",
+    "sha256": "28b4262eda491a2f41ceeaace7b34b4656d9d94483d0ae5980a1a4d8b0f6c2ef"
+  },
+  "learn_py/my-notes/Threading.ipynb": {
+    "destination": "03_python/my-notes/Threading.ipynb",
+    "sha256": "30e91d59096a6eb841965a18c95f0df6cad6a69f5c631af0d632e074aeb8984a"
+  },
+  "learn_py/my-notes/D1.ipynb": {
+    "destination": "03_python/my-notes/D1.ipynb",
+    "sha256": "1cfbc035aa461b3a6ac01d0f4b9ff33ecf4fe3da1d7f6de6b76bcfeceffe713a"
+  },
+  "learn_py/my-notes/Networking.ipynb": {
+    "destination": "03_python/my-notes/Networking.ipynb",
+    "sha256": "2b2b68880f78246c9fd2cbc9c1946a57972c59664fc8ef5effa125ee858f7c07"
+  },
+  "learn_py/my-notes/BigO.ipynb": {
+    "destination": "03_python/my-notes/BigO.ipynb",
+    "sha256": "5394775afd8e70aea11ac2e4a68aa62e3326cb09a10d4eb2f389e68fe3e83a65"
+  },
+  "learn_py/my-notes/D3-operators.py": {
+    "destination": "03_python/my-notes/D3-operators.py",
+    "sha256": "e40c0fc21ff9975eb3da859066856a3d08b853f9ea35f917af7a16e026c0c3bd"
+  },
+  "learn_py/my-notes/D5.ipynb": {
+    "destination": "03_python/my-notes/D5.ipynb",
+    "sha256": "3c4f94a4d68e5fbfaae823c372e94bb6e0827813936ff55a4c3cc5524c6312de"
+  },
+  "learn_py/my-notes/PythonAug13.ipynb": {
+    "destination": "03_python/my-notes/PythonAug13.ipynb",
+    "sha256": "c2d4a8d0b914c3224554995f91937cb805ac13bc16dff0ae337da7b368350721"
+  },
+  "learn_py/my-notes/D5-tasks.ipynb": {
+    "destination": "03_python/my-notes/D5-tasks.ipynb",
+    "sha256": "d28ffb8b19c443e50d31bcaecba2b3bc92197bdb12b1d68146b07baca10f0571"
+  },
+  "learn_py/my-notes/File handling.ipynb": {
+    "destination": "03_python/my-notes/File handling.ipynb",
+    "sha256": "8deb1c9f4ae42c7fef0fedb6db7bb6b2cb888581d2e365f506d418c52ec36e2b"
+  },
+  "learn_py/my-notes/common_task_table.csv": {
+    "destination": "03_python/my-notes/common_task_table.csv",
+    "sha256": "7836099a17da34ea9e8a470d3a23285af98b5bb19db82f2606218c21f4499235"
+  },
+  "learn_py/my-notes/args.py": {
+    "destination": "03_python/my-notes/args.py",
+    "sha256": "28cfb41c5cdb6c1a0fe7fc3f7c44ce7e57eab8ca83163d47ccc7d271b9e8f6e6"
+  },
+  "learn_py/my-notes/D7-D8-tasks.ipynb": {
+    "destination": "03_python/my-notes/D7-D8-tasks.ipynb",
+    "sha256": "5e0fb5996c46b5507d2f01c158d28bf33056f3ff6300d72b616fb9af953de126"
+  },
+  "learn_py/my-notes/Exception.ipynb": {
+    "destination": "03_python/my-notes/Exception.ipynb",
+    "sha256": "c6ac6466ebd5a8ee22cecbf42282ded9d113451e9e07abe96b2f29da0f510244"
+  },
+  "learn_py/my-notes/Deverrorcodes.txt": {
+    "destination": "03_python/my-notes/Deverrorcodes.txt",
+    "sha256": "b2949bfa697babadbb374e8187b25a43d37369e11acda3ad46cff3316fabd358"
+  },
+  "learn_py/my-notes/pytets.txt": {
+    "destination": "03_python/my-notes/pytets.txt",
+    "sha256": "7e81160614395a09c2606112c2f4ae8acd022b8bb432a51b72a7e730fa794066"
+  },
+  "learn_py/my-notes/Shallow_deepcopy.ipynb": {
+    "destination": "03_python/my-notes/Shallow_deepcopy.ipynb",
+    "sha256": "938005556abeb849febadf4b522d4e3f33e681621ecd3f83e7dfc524742da915"
+  },
+  "learn_py/my-notes/D2.ipynb": {
+    "destination": "03_python/my-notes/D2.ipynb",
+    "sha256": "9246c8569e56807961d96b13074642b77c5c9020de90ce918f4e2279ec31e89a"
+  },
+  "learn_py/my-notes/Pandas.ipynb": {
+    "destination": "03_python/my-notes/Pandas.ipynb",
+    "sha256": "0f9276e74a402032c92f22abd5a8f0c1252d59666d34d264ccda960ed19d1163"
+  },
+  "learn_py/my-notes/Subprocess.ipynb": {
+    "destination": "03_python/my-notes/Subprocess.ipynb",
+    "sha256": "39a03e33877f45bd0beda171af85cef40c1a7180b1d620a16c4483f34493f175"
+  },
+  "learn_py/my-notes/Day11.ipynb": {
+    "destination": "03_python/my-notes/Day11.ipynb",
+    "sha256": "711f2f2728518aa576d9b48e4f6f370368398603933f774b5a7480e2db51b407"
+  },
+  "learn_py/my-notes/func.py": {
+    "destination": "03_python/my-notes/func.py",
+    "sha256": "66e9f3a2ff65d9b01cad241ed8fb0f7e05c1e95c9b28c91dcaba153f22c2bd76"
+  },
+  "learn_py/my-notes/practise.ipynb": {
+    "destination": "03_python/my-notes/practise.ipynb",
+    "sha256": "67bad30eb806c773fa436557e70ebf823889ce295a923495bd7c85dc09df0571"
+  },
+  "learn_py/my-notes/__pycache__/socket.cpython-312.pyc": {
+    "destination": "03_python/my-notes/__pycache__/socket.cpython-312.pyc",
+    "sha256": "a8128ea8dda84918dbfcb1e5f40f0657ba390e69960ee302e8ebf237682c8625"
+  },
+  "Docker/docker.md": {
+    "destination": "05_docker/docker.md",
+    "sha256": "0285f991dd46ba5617e29fe0232b23f82f8aa896fa5fac428eab18c5fbc13f5e"
+  },
+  "learn_C++/union.cpp": {
+    "destination": "02_cpp/union.cpp",
+    "sha256": "0bd72fffa2eec3c0945925a5e08e16c4ee0caabf47619a39454683646837eb94"
+  },
+  "learn_C++/struct.cpp": {
+    "destination": "02_cpp/struct.cpp",
+    "sha256": "92d49df46feeccbbb1f694a0362214e863d90fcb4a3e0da929ce3bfad9e7bfc7"
+  },
+  "learn_C++/Linux_device_driver.cpp": {
+    "destination": "02_cpp/Linux_device_driver.cpp",
+    "sha256": "ac015e519192e67ec089559b9f3650526d628ec0e0f5d9527765aa4a205dc56a"
+  },
+  "learn_C++/D6vector.cpp": {
+    "destination": "02_cpp/D6vector.cpp",
+    "sha256": "8ce1f5a98a0159a11b282f32a006fcee2ff0dd72965ab4f6737b314cf2f2a2fb"
+  },
+  "learn_C++/recursion.cpp": {
+    "destination": "02_cpp/recursion.cpp",
+    "sha256": "a4273dc694108412467225697cccc2833f9165c5b9fb5cdaa210136f214d0cf5"
+  },
+  "learn_C++/D9-calss.cpp": {
+    "destination": "02_cpp/D9-calss.cpp",
+    "sha256": "eeab1c713c85d2748aaa881577755a2d76b712b78478ab4ef1548a71630a9743"
+  },
+  "learn_C++/processautomation.cpp": {
+    "destination": "02_cpp/processautomation.cpp",
+    "sha256": "010007bc9967c49ab4f658d1605814999ee02482643cae40b65f0764359ff12b"
+  },
+  "learn_C++/recursion": {
+    "destination": "99_build_artifacts/cpp/recursion",
+    "sha256": "bd26dce0fabead9e24e067afe579bcf4b43d2cd0d8585a2ab7b827d09cbc7d38"
+  },
+  "learn_C++/test.cpp": {
+    "destination": "02_cpp/test.cpp",
+    "sha256": "7fb6472cb47945aa0fc8e5d635ecf39d3743b589ce6941b417abc22bc922a62f"
+  },
+  "learn_C++/processautomation": {
+    "destination": "99_build_artifacts/cpp/processautomation",
+    "sha256": "145427336748b06711c5bae2c182283b7fbe92fbab00e1546b184b746fcbb1c2"
+  },
+  "learn_C++/scope_variable.cpp": {
+    "destination": "02_cpp/scope_variable.cpp",
+    "sha256": "ce191d8e3a4164b44882fb6dac0586fe99fe95bb2b1eeb931e3107ed61025154"
+  },
+  "learn_C++/D10.cpp": {
+    "destination": "02_cpp/D10.cpp",
+    "sha256": "b5304554e03d8730841d8bca22bb2bf0d609ff64dcaa5d070fe60a493048d210"
+  },
+  "learn_C++/C++ Cheat Sheet & Quick Reference.pdf": {
+    "destination": "02_cpp/cpp_cheat_sheet_quick_reference.pdf",
+    "sha256": "a9e714e043dfb56d41e467f7754d224409699dc5b449c5a5c5d2cb421f8638f1"
+  },
+  "learn_C++/codeforce69A.cpp": {
+    "destination": "02_cpp/codeforce69A.cpp",
+    "sha256": "2ffccab46ade2f9032d62956ca40e779f7e305b17cbf3ce72f877ec659ca8caa"
+  },
+  "learn_C++/Process automation": {
+    "destination": "99_build_artifacts/cpp/Process automation",
+    "sha256": "0a2d622c2193825235c842c6b96f94547bd24e0682604fbc8c5118af10f6d769"
+  },
+  "learn_C++/struct": {
+    "destination": "99_build_artifacts/cpp/struct",
+    "sha256": "d2e14facd89fd45bcadc6e0b5fbf156bcc95d9f57e78c91f6bb107a35a10893c"
+  },
+  "learn_C++/logical_operators": {
+    "destination": "99_build_artifacts/cpp/logical_operators",
+    "sha256": "fa9b8c6a3098db266b8a8cad736965687f46009d5720e23021c4aefd3adafa22"
+  },
+  "learn_C++/notes + syntax.md": {
+    "destination": "02_cpp/notes_syntax.md",
+    "sha256": "521255e28f3a52aea9fd0881d132ca42fd25848a00481c6b6e5e3b51a0e4a32a"
+  },
+  "learn_C++/sumofno": {
+    "destination": "99_build_artifacts/cpp/sumofno",
+    "sha256": "58fdff03ab0b54925d648a24f390b6b3af9bbe4b121847520f6cc235a2280093"
+  },
+  "learn_C++/logical_operators.cpp": {
+    "destination": "02_cpp/logical_operators.cpp",
+    "sha256": "0819410ee5b5b0473f49ff465f42a7bd355b2c2de3a691904137c34ee92891a2"
+  },
+  "learn_C++/class": {
+    "destination": "99_build_artifacts/cpp/class",
+    "sha256": "517a1af35e69b90dd5898e153e1a743b059f33f4cde8f157ef49001425512491"
+  },
+  "learn_C++/union": {
+    "destination": "99_build_artifacts/cpp/union",
+    "sha256": "219f7203ff5d64cb20babda1373e195966f47cbcfd00d9a4024e471e041c9a2d"
+  },
+  "learn_C++/conditional_stmts.cpp": {
+    "destination": "02_cpp/conditional_stmts.cpp",
+    "sha256": "40041a7ed017b5eb19c5be161a829d1561b2f6fa8d619c5699c60728acc64c94"
+  },
+  "learn_C++/class.cpp": {
+    "destination": "02_cpp/class.cpp",
+    "sha256": "1372f227a7349af4bbd9112de1acd11d4faab06a18e1b09115cc288eece2de2a"
+  },
+  "learn_C++/scope_variable": {
+    "destination": "99_build_artifacts/cpp/scope_variable",
+    "sha256": "29f935f8da24b49ca07e5a4b0c678309c7d82a9e6171b6d93c941cfd2a15f29f"
+  },
+  "learn_C++/main": {
+    "destination": "99_build_artifacts/cpp/main",
+    "sha256": "84063dda6eba238576261a7467d252f6451b220232fd754dd259ace1da58d377"
+  },
+  "learn_C++/processauto": {
+    "destination": "99_build_artifacts/cpp/processauto",
+    "sha256": "f6fc6d99d22e3bfd00c4076d4cd5cfce06c66a48b721c3c687ad0500b3643fc6"
+  },
+  "learn_C++/main.cpp": {
+    "destination": "02_cpp/main.cpp",
+    "sha256": "79233c506104019a2bfbb4fd8c10d9d256e18828f19cdb6b7828fe253f893c8e"
+  },
+  "learn_C++/conditional_stmts": {
+    "destination": "99_build_artifacts/cpp/conditional_stmts",
+    "sha256": "5cac4fb670061fc716f52be7d598fc0ba7b9b1b02d7e346c63e283d4249e03fc"
+  },
+  "learn_C++/sumofno.cpp": {
+    "destination": "02_cpp/sumofno.cpp",
+    "sha256": "97173b11b8e284f5dc17dbda1edad3ff34b58927f41b329c4b402ea475841187"
+  },
+  "learn_C++/class.dSYM/Contents/Info.plist": {
+    "destination": "99_build_artifacts/cpp/class.dSYM/Contents/Info.plist",
+    "sha256": "b8e9c54180a24900bf6c7290693db9f4c8d391ea7a2f9803b5262fe3214207ac"
+  },
+  "learn_C++/class.dSYM/Contents/Resources/Relocations/aarch64/class.yml": {
+    "destination": "99_build_artifacts/cpp/class.dSYM/Contents/Resources/Relocations/aarch64/class.yml",
+    "sha256": "0e4643c01956466f1b372807f631e732408730457fd776395b4fa2b9b6271983"
+  },
+  "learn_C++/class.dSYM/Contents/Resources/DWARF/class": {
+    "destination": "99_build_artifacts/cpp/class.dSYM/Contents/Resources/DWARF/class",
+    "sha256": "6ed72ff7f1a123bd9e9bc5c15e322e632fb54ad32df04bae335e8a1eb6c789e8"
+  },
+  "learn_C++/processautomation.dSYM/Contents/Info.plist": {
+    "destination": "99_build_artifacts/cpp/processautomation.dSYM/Contents/Info.plist",
+    "sha256": "0ce285cc9998765f3207ae9f5a1e9aab20605d4b928f035a01cda5075d1c0d7a"
+  },
+  "learn_C++/processautomation.dSYM/Contents/Resources/Relocations/aarch64/processautomation.yml": {
+    "destination": "99_build_artifacts/cpp/processautomation.dSYM/Contents/Resources/Relocations/aarch64/processautomation.yml",
+    "sha256": "9db6b9a6720a1e39332b2fa13f50b0367d3ed90ac1afbea43f59acc1b4fee09f"
+  },
+  "learn_C++/processautomation.dSYM/Contents/Resources/DWARF/processautomation": {
+    "destination": "99_build_artifacts/cpp/processautomation.dSYM/Contents/Resources/DWARF/processautomation",
+    "sha256": "4adf48ca1d428d5e0fb90ed12755d1cfb085260ebd32aaf7574e2b0e3e5b7e1b"
+  },
+  "learn_C++/scope_variable.dSYM/Contents/Info.plist": {
+    "destination": "99_build_artifacts/cpp/scope_variable.dSYM/Contents/Info.plist",
+    "sha256": "aa5d328dd8a0370a5c5c47709345b0b915aa7926425ca88f542ac5c48015948a"
+  },
+  "learn_C++/scope_variable.dSYM/Contents/Resources/Relocations/aarch64/scope_variable.yml": {
+    "destination": "99_build_artifacts/cpp/scope_variable.dSYM/Contents/Resources/Relocations/aarch64/scope_variable.yml",
+    "sha256": "565e212fde86fc0b055e5f917ecedcd454819971bccae8e58edad9c32d773fd7"
+  },
+  "learn_C++/scope_variable.dSYM/Contents/Resources/DWARF/scope_variable": {
+    "destination": "99_build_artifacts/cpp/scope_variable.dSYM/Contents/Resources/DWARF/scope_variable",
+    "sha256": "05086fb271451aade636140c9f9f0cbb3b710b9f47af608681bc5c7eb7f8283c"
+  },
+  "learn_C++/conditional_stmts.dSYM/Contents/Info.plist": {
+    "destination": "99_build_artifacts/cpp/conditional_stmts.dSYM/Contents/Info.plist",
+    "sha256": "0e7aded3dc375dd86406af78cae25c3e393ea8c38119d935e365fba8bf7d0b60"
+  },
+  "learn_C++/conditional_stmts.dSYM/Contents/Resources/Relocations/aarch64/conditional_stmts.yml": {
+    "destination": "99_build_artifacts/cpp/conditional_stmts.dSYM/Contents/Resources/Relocations/aarch64/conditional_stmts.yml",
+    "sha256": "b2b41d0dd5421b64673c0be4c1711a51dead476caf95528f366fa381f0e0d93c"
+  },
+  "learn_C++/conditional_stmts.dSYM/Contents/Resources/DWARF/conditional_stmts": {
+    "destination": "99_build_artifacts/cpp/conditional_stmts.dSYM/Contents/Resources/DWARF/conditional_stmts",
+    "sha256": "edcc6f4fa50607289e6449643227546376e48bb712a1370548a376e66fe6b502"
+  },
+  "learn_C++/union.dSYM/Contents/Info.plist": {
+    "destination": "99_build_artifacts/cpp/union.dSYM/Contents/Info.plist",
+    "sha256": "f9a662fe82a2b42ddd0f3281284783f24ca25becfc813d455c79843f9a8b0675"
+  },
+  "learn_C++/union.dSYM/Contents/Resources/Relocations/aarch64/union.yml": {
+    "destination": "99_build_artifacts/cpp/union.dSYM/Contents/Resources/Relocations/aarch64/union.yml",
+    "sha256": "08e44a0371321af4ab41b76585c189f469d243ad6038658bc2ae9d651d7c91d7"
+  },
+  "learn_C++/union.dSYM/Contents/Resources/DWARF/union": {
+    "destination": "99_build_artifacts/cpp/union.dSYM/Contents/Resources/DWARF/union",
+    "sha256": "cbcd6245ee4ec6baf9c2e9cb42e0fe11b257b62458fb9f2cf36b3b8d9252b873"
+  },
+  "learn_C++/struct.dSYM/Contents/Info.plist": {
+    "destination": "99_build_artifacts/cpp/struct.dSYM/Contents/Info.plist",
+    "sha256": "2d0cd5eb4ea54ce648d3476985cec96bd9977c9e20ac14dd1a4e14b7072876d1"
+  },
+  "learn_C++/struct.dSYM/Contents/Resources/Relocations/aarch64/struct.yml": {
+    "destination": "99_build_artifacts/cpp/struct.dSYM/Contents/Resources/Relocations/aarch64/struct.yml",
+    "sha256": "470b4f9948f61b337add0c299cc464de6cb714c7bab0644a3814484042a272bc"
+  },
+  "learn_C++/struct.dSYM/Contents/Resources/DWARF/struct": {
+    "destination": "99_build_artifacts/cpp/struct.dSYM/Contents/Resources/DWARF/struct",
+    "sha256": "7a19726fdbfe872ed88d2d6841e3afb4c5f5d02970eca3ddbb47c0360d3f39c8"
+  },
+  "learn_C++/sumofno.dSYM/Contents/Info.plist": {
+    "destination": "99_build_artifacts/cpp/sumofno.dSYM/Contents/Info.plist",
+    "sha256": "30acfc2dbf186b2431a0e24c15c8ee1b190fd238c79cf2bcd8b2591e3dcef1e8"
+  },
+  "learn_C++/sumofno.dSYM/Contents/Resources/Relocations/aarch64/sumofno.yml": {
+    "destination": "99_build_artifacts/cpp/sumofno.dSYM/Contents/Resources/Relocations/aarch64/sumofno.yml",
+    "sha256": "ba31c4b15dbb9ba4e8063f4a9c50a4a07be249dc360e13a03b8e755b65f22e78"
+  },
+  "learn_C++/sumofno.dSYM/Contents/Resources/DWARF/sumofno": {
+    "destination": "99_build_artifacts/cpp/sumofno.dSYM/Contents/Resources/DWARF/sumofno",
+    "sha256": "80716b81df46a2f05e7028fa167a38e8954393c1a5c6b82df30432d61924db28"
+  },
+  "learn_C++/main.dSYM/Contents/Info.plist": {
+    "destination": "99_build_artifacts/cpp/main.dSYM/Contents/Info.plist",
+    "sha256": "74e1e24a8e6040a036a35c93554ad80ad0f9c701ffd327db917e98f5a56afa47"
+  },
+  "learn_C++/main.dSYM/Contents/Resources/Relocations/aarch64/main.yml": {
+    "destination": "99_build_artifacts/cpp/main.dSYM/Contents/Resources/Relocations/aarch64/main.yml",
+    "sha256": "19dd191f2af6fe3abbe34461074c4a4da37ee6d33e8f16a29d1be6f3ff597bda"
+  },
+  "learn_C++/main.dSYM/Contents/Resources/DWARF/main": {
+    "destination": "99_build_artifacts/cpp/main.dSYM/Contents/Resources/DWARF/main",
+    "sha256": "232a7bdf58009d5591d97e23c14c08e3bbb3c2d6ebce79d131bdf5ae11f2d714"
+  },
+  "learn_C++/logical_operators.dSYM/Contents/Info.plist": {
+    "destination": "99_build_artifacts/cpp/logical_operators.dSYM/Contents/Info.plist",
+    "sha256": "e218873f9550b8f463e1e796730e896cfd11ad44bce9649bf9306883f0693559"
+  },
+  "learn_C++/logical_operators.dSYM/Contents/Resources/Relocations/aarch64/logical_operators.yml": {
+    "destination": "99_build_artifacts/cpp/logical_operators.dSYM/Contents/Resources/Relocations/aarch64/logical_operators.yml",
+    "sha256": "32e1fa347a3953857834bc073f09e8e1862ff0d51f94028e732a9f8ea3ebe55f"
+  },
+  "learn_C++/logical_operators.dSYM/Contents/Resources/DWARF/logical_operators": {
+    "destination": "99_build_artifacts/cpp/logical_operators.dSYM/Contents/Resources/DWARF/logical_operators",
+    "sha256": "2e6078f92a55f9a1a8cdf70fb08d94be2b148426a10bc243052b59a0a5d9e9bf"
+  },
+  "learn_C++/Process automation.dSYM/Contents/Info.plist": {
+    "destination": "99_build_artifacts/cpp/Process automation.dSYM/Contents/Info.plist",
+    "sha256": "0f4c3357e4a8ef21dddf9421524ae6e9a1f9ee943990a7a81d6f39725a6a694e"
+  },
+  "learn_C++/Process automation.dSYM/Contents/Resources/Relocations/aarch64/Process automation.yml": {
+    "destination": "99_build_artifacts/cpp/Process automation.dSYM/Contents/Resources/Relocations/aarch64/Process automation.yml",
+    "sha256": "791211dd285f8d3828459092205adb9917c1b6d0c2d83a0925eda9ad76ff8b4f"
+  },
+  "learn_C++/Process automation.dSYM/Contents/Resources/DWARF/Process automation": {
+    "destination": "99_build_artifacts/cpp/Process automation.dSYM/Contents/Resources/DWARF/Process automation",
+    "sha256": "c8f3e96c7e3922e03de3cfc29e0cb610b621e59ba629dfefaaf7d7780cae64e9"
+  },
+  "learn_C++/recursion.dSYM/Contents/Info.plist": {
+    "destination": "99_build_artifacts/cpp/recursion.dSYM/Contents/Info.plist",
+    "sha256": "2425c00db32ec5df6743a1db270f108694cafbd09052d38a2cfcc00e1b79fa4a"
+  },
+  "learn_C++/recursion.dSYM/Contents/Resources/Relocations/aarch64/recursion.yml": {
+    "destination": "99_build_artifacts/cpp/recursion.dSYM/Contents/Resources/Relocations/aarch64/recursion.yml",
+    "sha256": "2983785c3c67268bd9bc043fc58cf2b117004caed9cdd5b802d472376ea8ddd0"
+  },
+  "learn_C++/recursion.dSYM/Contents/Resources/DWARF/recursion": {
+    "destination": "99_build_artifacts/cpp/recursion.dSYM/Contents/Resources/DWARF/recursion",
+    "sha256": "4342e32e1f9c98543f8f7908117afd43106c72c24fb0c1c1a6bb89f942c47734"
+  },
+  "RHEL 9 Perf Tune/red_hat_enterprise_linux_for_real_time-9-optimizing_rhel_9_for_real_time_for_low_latency_operation-en-us.pdf": {
+    "destination": "06_linux_performance/red_hat_enterprise_linux_for_real_time_9_optimizing_rhel_9_for_real_time_for_low_latency_operation_en_us.pdf",
+    "sha256": "798cefbdcff20fd1a98f75c2471ac739d6c5fb04fe82f864207e06ced2a8e5c1"
+  },
+  "RHEL 9 Perf Tune/Mynotes/DPDK.txt": {
+    "destination": "06_linux_performance/Mynotes/DPDK.txt",
+    "sha256": "e45970b76bf07b4742ff6e052aab88e9e8326f697880f443a8d4d3e1b467684a"
+  },
+  "Study_Guides/03_Ansible_Foundations.md": {
+    "destination": "00_study_guides/03_ansible_foundations.md",
+    "sha256": "4b8e32bd96ade37e2b3ce83f5b170563e7c4c058cc8a7355fd32c1c3eabb755f"
+  },
+  "Study_Guides/02_Docker_Foundations.md": {
+    "destination": "00_study_guides/02_docker_foundations.md",
+    "sha256": "ccc2ba010c8724a2bd4166dc8d44f5cb14d626133c98318fa2a310f861322555"
+  },
+  "Study_Guides/01_Networking_Foundations.md": {
+    "destination": "00_study_guides/01_networking_foundations.md",
+    "sha256": "bfcd33f844e905a3815bf1888b48a17f5f8602fe22d1a875d84d8951dbcbee13"
+  },
+  "Study_Guides/00_START_HERE.md": {
+    "destination": "00_study_guides/00_start_here.md",
+    "sha256": "402fda776cf69057a49aa378bf59ffb8e351ceb495f13b88591af28afebf5c53"
+  },
+  "Embedded-Linux-C/mynotes/day1.md": {
+    "destination": "09_embedded_linux_c/mynotes/day1.md",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Networking/00_linux_networking_roadmap.md": {
+    "destination": "01_networking/00_linux_networking_roadmap.md",
+    "sha256": "87eaa7421c11d713f5b490defe0f8fc4e467d4ea58b25722c7cb2f8ee109270a"
+  },
+  "Networking/CiscoPress-CCNP-and-CCIE-Enterprise-Core-ENCOR-350-401-Official-Cert-Guide.pdf": {
+    "destination": "01_networking/ciscopress_ccnp_and_ccie_enterprise_core_encor_350_401_official_cert_guide.pdf",
+    "sha256": "16e2cc03bf80ba5b11bb95d20034fd2ad38a9e58aba9ceec72b10f5d5be824ba"
+  },
+  "Networking/MyNotes/note1.txt": {
+    "destination": "01_networking/MyNotes/note1.txt",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "Networking/MyNotes/Day1.md": {
+    "destination": "01_networking/MyNotes/Day1.md",
+    "sha256": "8e3e8079a7553515c42df2825a460833d63906bf248affcab9afacfd6eaad9d3"
+  },
+  "Networking/MyNotes/Personal_Reminders.md": {
+    "destination": "01_networking/MyNotes/Personal_Reminders.md",
+    "sha256": "1e69ac1f4e608abf08f857e698c955b7ed718a5a84f11bcaac8b4e90097aa808"
+  },
+  "Networking/MyNotes/PTP.md": {
+    "destination": "01_networking/MyNotes/PTP.md",
+    "sha256": "d0154ec9d867533c69ee07b69cfb65043e1a47e34d4be02aba79d84772a19c1c"
+  },
+  "Networking/MyNotes/CCNA1.md": {
+    "destination": "01_networking/MyNotes/CCNA1.md",
+    "sha256": "7b66f93fb65dccff4f17d58bea7df14e9973f0be97349dee03a50e6536602363"
+  },
+  "Networking/AI_CCNP_Enterprise_ENCOR_ENARSI/02_ENCOR_INFRASTRUCTURE.md": {
+    "destination": "01_networking/02_ccnp/02_encor_infrastructure.md",
+    "sha256": "e301c43941955ad0ba178489f23c73061f301d99b3692df102f7aa61aff42ae5"
+  },
+  "Networking/AI_CCNP_Enterprise_ENCOR_ENARSI/12_PRACTICE_ASSESSMENTS.md": {
+    "destination": "01_networking/02_ccnp/12_practice_assessments.md",
+    "sha256": "65423732dc289e62fe03045c13293832a9341d3ddf2b46f3b3a89bcbd85b60db"
+  },
+  "Networking/AI_CCNP_Enterprise_ENCOR_ENARSI/03_ENCOR_ASSURANCE_SECURITY_AUTOMATION.md": {
+    "destination": "01_networking/02_ccnp/03_encor_assurance_security_automation.md",
+    "sha256": "1323ac55ed83bfb9060bf4de0e69055624cc21fbe13a8cf028ecf0b72654c23c"
+  },
+  "Networking/AI_CCNP_Enterprise_ENCOR_ENARSI/01_ENCOR_ARCHITECTURE_VIRTUALIZATION.md": {
+    "destination": "01_networking/02_ccnp/01_encor_architecture_virtualization.md",
+    "sha256": "b28bf5f12230145a8474708acc121bb5b365b330f9bf0164c66e28ca2bd466dd"
+  },
+  "Networking/AI_CCNP_Enterprise_ENCOR_ENARSI/14_BLUEPRINT_CHECKLIST.md": {
+    "destination": "01_networking/02_ccnp/14_blueprint_checklist.md",
+    "sha256": "550816d8aa21220bff16665c324ecca56277e7408fd965a69b95808ecb096e87"
+  },
+  "Networking/AI_CCNP_Enterprise_ENCOR_ENARSI/00_SYLLABUS.md": {
+    "destination": "01_networking/02_ccnp/00_syllabus.md",
+    "sha256": "8c12bf6f32f399222634e728fe522a36c04b6c351519ad5ad1f8e8fa2b43c830"
+  },
+  "Networking/AI_CCNP_Enterprise_ENCOR_ENARSI/07_PACKET_FLOWS_AND_WORKFLOWS.md": {
+    "destination": "01_networking/02_ccnp/07_packet_flows_and_workflows.md",
+    "sha256": "eedbebe6f326e76f3cb181d42a57f5f2fd917e46f801dc4ba25a72c9b7ce55f9"
+  },
+  "Networking/AI_CCNP_Enterprise_ENCOR_ENARSI/README.md": {
+    "destination": "01_networking/02_ccnp/README.md",
+    "sha256": "21bf395012513424011f3022616641149b9cc16a8108cc4070820bc5aeb8db00"
+  },
+  "Networking/AI_CCNP_Enterprise_ENCOR_ENARSI/05_ENARSI_VPN.md": {
+    "destination": "01_networking/02_ccnp/05_enarsi_vpn.md",
+    "sha256": "c09bf156209eb611f431ddd49ea55a2e0611a4d809b0570112fc8a8f1d112605"
+  },
+  "Networking/AI_CCNP_Enterprise_ENCOR_ENARSI/11_SCENARIO_QA.md": {
+    "destination": "01_networking/02_ccnp/11_scenario_qa.md",
+    "sha256": "823d8453bdf6a9163dd865d32851b2d0871bc3372bd86becd391fdd2010b2ff9"
+  },
+  "Networking/AI_CCNP_Enterprise_ENCOR_ENARSI/08_LABS.md": {
+    "destination": "01_networking/02_ccnp/08_labs.md",
+    "sha256": "12a961c4d7de3c1aed08074fc79117683efb9ed39e959d2dd8c08336c5ffe91b"
+  },
+  "Networking/AI_CCNP_Enterprise_ENCOR_ENARSI/10_QA.md": {
+    "destination": "01_networking/02_ccnp/10_qa.md",
+    "sha256": "f584b5eba3f5ca75c634967422f415cd8f080ffea27766a800c6013189166e98"
+  },
+  "Networking/AI_CCNP_Enterprise_ENCOR_ENARSI/04_ENARSI_ADVANCED_ROUTING.md": {
+    "destination": "01_networking/02_ccnp/04_enarsi_advanced_routing.md",
+    "sha256": "b513e7aec6033983d81addb7aa50e43ff15f3661318e070a319e9f18758a3982"
+  },
+  "Networking/AI_CCNP_Enterprise_ENCOR_ENARSI/13_WORKED_EXAMPLES.md": {
+    "destination": "01_networking/02_ccnp/13_worked_examples.md",
+    "sha256": "39dbc87062daf26301068fa466322ed4082df4e56a2561aed8265a61d4f1c73f"
+  },
+  "Networking/AI_CCNP_Enterprise_ENCOR_ENARSI/09_COMMAND_REFERENCE.md": {
+    "destination": "01_networking/02_ccnp/09_command_reference.md",
+    "sha256": "dba3d700e82a24ea3ba754800bc82bec4772c6d36e5dc9964fa5486be02276e6"
+  },
+  "Networking/AI_CCNP_Enterprise_ENCOR_ENARSI/06_ENARSI_SECURITY_SERVICES.md": {
+    "destination": "01_networking/02_ccnp/06_enarsi_security_services.md",
+    "sha256": "a0d24dae60899fcd6e2ab0746f2b808282e59635144070b8b831383c2868735f"
+  },
+  "Networking/CCNP classes/CCNP D1.md": {
+    "destination": "01_networking/03_class_notes/ccnp_d1.md",
+    "sha256": "98a5649bfcfc4059860328c3cd90f0ff47840ea8a8fc5278d763c7a2ae5cd759"
+  },
+  "Networking/CCNP classes/CCNP lesson 1_stP.pdf": {
+    "destination": "01_networking/03_class_notes/ccnp_lesson_1_stp.pdf",
+    "sha256": "20ec7f42ca94b8ea545c74b282e8e200ac8df34146be7ab2efa8f8a754995f8a"
+  },
+  "Networking/AI_CCNA_v2_Low_Latency/06_LABS.md": {
+    "destination": "01_networking/01_ccna/06_labs.md",
+    "sha256": "81d334a2c84699777d51deb9311a3739bf41e4121f3267567138e6190a76bc26"
+  },
+  "Networking/AI_CCNA_v2_Low_Latency/05_AI_AND_NETOPS.md": {
+    "destination": "01_networking/01_ccna/05_ai_and_netops.md",
+    "sha256": "c60d2a559144d8ce12088b56eec2e19edb2349cb3b56f2e89be4a35ba58955a7"
+  },
+  "Networking/AI_CCNA_v2_Low_Latency/03_IP_ROUTING.md": {
+    "destination": "01_networking/01_ccna/03_ip_routing.md",
+    "sha256": "1e5a137c62c7d8b4c6556af60fe213b4090f96ed1eb626bfaf43afd0ad6d3a12"
+  },
+  "Networking/AI_CCNA_v2_Low_Latency/11_FINAL_REVISION.md": {
+    "destination": "01_networking/01_ccna/11_final_revision.md",
+    "sha256": "65e7901faa6f3e56dbdb4ba149d28a0d880929cf017e17340b4f75ccc616908a"
+  },
+  "Networking/AI_CCNA_v2_Low_Latency/00_SYLLABUS.md": {
+    "destination": "01_networking/01_ccna/00_syllabus.md",
+    "sha256": "48502a6f5539ff320f458384eb21920fa63dbd3b01b4494b0525b2b6638f642a"
+  },
+  "Networking/AI_CCNA_v2_Low_Latency/12_GLOSSARY.md": {
+    "destination": "01_networking/01_ccna/12_glossary.md",
+    "sha256": "0b2ac475b0f95fda961930ed570eb83141a284df9f0bb5100de6f9f776cf9a47"
+  },
+  "Networking/AI_CCNA_v2_Low_Latency/02_SWITCHING_AND_ACCESS.md": {
+    "destination": "01_networking/01_ccna/02_switching_and_access.md",
+    "sha256": "21ae80ecfde1a576d4e5a6f55296de5c7ec7bf0c6ece1f8518efed285e544e28"
+  },
+  "Networking/AI_CCNA_v2_Low_Latency/07_COMMAND_REFERENCE.md": {
+    "destination": "01_networking/01_ccna/07_command_reference.md",
+    "sha256": "2463e25373c0b1e4c6ab9b1c7118db27c832c5f187830d18e4fe131e679e3bb4"
+  },
+  "Networking/AI_CCNA_v2_Low_Latency/README.md": {
+    "destination": "01_networking/01_ccna/README.md",
+    "sha256": "19c47a36a95574bf39a090b7ab34b0b921ac376404309ea010d37633450c4906"
+  },
+  "Networking/AI_CCNA_v2_Low_Latency/10_PRACTICE_EXAMS.md": {
+    "destination": "01_networking/01_ccna/10_practice_exams.md",
+    "sha256": "358faf23240449dadd8784b44934d703fa4be7e16a33d4eecc53b2cd5dee399d"
+  },
+  "Networking/AI_CCNA_v2_Low_Latency/08_STANDARD_QA.md": {
+    "destination": "01_networking/01_ccna/08_standard_qa.md",
+    "sha256": "f2ca1d74ecbc991dea64d0a45954f0d3a1aa2984a7aeb4c42cae06f243ee7a5a"
+  },
+  "Networking/AI_CCNA_v2_Low_Latency/01_NETWORK_INFRASTRUCTURE.md": {
+    "destination": "01_networking/01_ccna/01_network_infrastructure.md",
+    "sha256": "4f99c77255cff55435f78fc4e81e8d3ed9d00c79d9ed977a5d316ea04225bddc"
+  },
+  "Networking/AI_CCNA_v2_Low_Latency/04_SERVICES_AND_SECURITY.md": {
+    "destination": "01_networking/01_ccna/04_services_and_security.md",
+    "sha256": "f89a323b116727e975e22b4aa0e3561e37e513253866f7d8005d3ff29bfdf3b1"
+  },
+  "Networking/AI_CCNA_v2_Low_Latency/09_SCENARIO_QA.md": {
+    "destination": "01_networking/01_ccna/09_scenario_qa.md",
+    "sha256": "912b71b5955ffcf10f299d9e62741cf44ad86bf6985a1874d76824c77d7612d5"
+  },
+  "Ansible/ansible_notes.md": {
+    "destination": "04_ansible/ansible_notes.md",
+    "sha256": "803aa949b47485e7508246da81aabc9a3f9cab062db9837c7c3c77d6efe8f5c4"
+  },
+  "English/phrases.txt": {
+    "destination": "08_english/phrases.txt",
+    "sha256": "f219d829e31406ce82fd0c4c4b4afa7410e83157ada7c105606a0200fcfb4605"
+  },
+  "English/english-dictionary.pdf": {
+    "destination": "08_english/english_dictionary.pdf",
+    "sha256": "32c5155685dd69aa5495a75b0f8bb64f013060bd4cc8a1dbdd64f7884474e139"
+  },
+  "CCNA_v2_Low_Latency/MyNotes/CCNA1.md": {
+    "destination": "90_personal_notes/legacy_ccna/MyNotes/CCNA1.md",
+    "sha256": "7b66f93fb65dccff4f17d58bea7df14e9973f0be97349dee03a50e6536602363"
+  },
+  "Wireshark/wrire1.txt": {
+    "destination": "07_packet_analysis/wrire1.txt",
+    "sha256": "64d7ad42ab4d94dc3b3e789e91c0ceec6de2a642415a1a414e238bd341f56f25"
+  },
+  "Networking/.DS_Store": {
+    "destination": "01_networking/.DS_Store",
+    "sha256": "d4421715925b31732c9985e54a2de734f9c3b5e3bcaf8fbb5b992978679cdab2"
+  },
+  "Networking/AI_CCNA_v2_Low_Latency/.DS_Store": {
+    "destination": "01_networking/01_ccna/.DS_Store",
+    "sha256": "b0b45a1ef7c51a798fcb41992d727a4a00e2ca1b8d91bb049ae130dc3420d3be"
+  },
+  "learn_C++/.DS_Store": {
+    "destination": "02_cpp/.DS_Store",
+    "sha256": "fbb669b48951121ee51dada9ae6f262f51b7bb87eb66b334b6271a6ccdbbf1af"
+  },
+  "learn_py/.DS_Store": {
+    "destination": "03_python/.DS_Store",
+    "sha256": "020344e0661e014eeb35c3a5995c2e8aee3068a9af9b78f16292c5017251931f"
+  },
+  "learn_py/.vscode/settings.json": {
+    "destination": "03_python/.vscode/settings.json",
+    "sha256": "f0573a6b1c8116fab8139cef12fa17e51f5815160fb7a6065ca626fa799de440"
+  }
+}

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerate the offline HTML reader. Requires: pip install markdown-it-py."""
+"""Regenerate the offline HTML reader. Dependencies: markdown-it-py, Pygments."""
 import json, re, sys
 from pathlib import Path
 from markdown_it import MarkdownIt
@@ -8,15 +8,17 @@ from pygments.lexers import get_lexer_by_name, guess_lexer
 from pygments.formatters import HtmlFormatter
 from pygments.util import ClassNotFound
 import html
+sys.path.insert(0, str(Path(__file__).resolve().parent/'tools/reader'))
+from reader_support import excluded, article_number, publish_markdown
 
 root = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else Path(__file__).resolve().parent
 md = MarkdownIt('commonmark', {'html': False}).enable('table').enable('strikethrough')
 articles = []
-names = {'learn_C++': 'C++ / Exercises', 'learn_py/Theory': 'Python / Lessons', 'learn_py/my-notes': 'Python / Exercises', 'learn_py/docs': 'Python / Syllabuses and interview preparation', 'Networking/AI_CCNA_v2_Low_Latency': 'Networking / CCNA course', 'Networking/AI_CCNP_Enterprise_ENCOR_ENARSI': 'Networking / CCNP course', 'Networking/MyNotes': 'Networking / Personal notes', 'Networking/CCNP classes': 'Networking / Class notes', 'Study_Guides': '00 Study guides and routes'}
+names = {'01_networking/01_ccna':'01 Networking / 01 CCNA','01_networking/02_ccnp':'01 Networking / 02 CCNP','01_networking/03_class_notes':'01 Networking / 03 Classes','03_python/00_study_routes':'03 Python / 00 Study routes','03_python/01_lessons':'03 Python / 01 Lessons'}
 for p in sorted(root.rglob('*')):
-    if not p.is_file() or any(x.startswith('.') or x.endswith('.dSYM') for x in p.relative_to(root).parts):
+    if not p.is_file() or excluded(p.relative_to(root)):
         continue
-    if p.suffix.lower() not in ('.md', '.txt', '.py', '.cpp', '.sh', '.pdf') or p.name == 'build_reader.py':
+    if p.suffix.lower() not in ('.md', '.txt', '.py', '.cpp', '.sh', '.pdf') or p.name in {'build_reader.py','reader_support.py','requirements-reader.txt'}:
         continue
     if p.stat().st_size == 0:
         continue
@@ -24,7 +26,7 @@ for p in sorted(root.rglob('*')):
     rel = p.relative_to(root).as_posix()
     match = re.search(r'^#\s+(.+)', raw, re.M) if p.suffix.lower() in ('.md', '.txt') else None
     title = match.group(1).strip() if match else p.stem.replace('_', ' ')
-    group = next((v for k,v in names.items() if rel.startswith(k+'/')), rel.split('/')[0] if '/' in rel else 'General')
+    group = next((v for k,v in names.items() if rel.startswith(k+'/')), rel.split('/')[0] if '/' in rel else '00_library_overview')
     if p.suffix.lower()=='.pdf':
         import html
         from urllib.parse import quote
@@ -33,7 +35,7 @@ for p in sorted(root.rglob('*')):
         import html
         rendered = '<h1>'+html.escape(title)+'</h1><pre><code>'+html.escape(raw)+'</code></pre>'
     else:
-        rendered = md.render(raw)
+        rendered = md.render(publish_markdown(raw))
     def colour_code(match):
         attrs, body = match.groups()
         language = re.search(r'language-([^"\s]+)', attrs)
@@ -47,8 +49,8 @@ for p in sorted(root.rglob('*')):
         except ClassNotFound:
             return match.group(0)
     rendered = re.sub(r'<pre><code([^>]*)>(.*?)</code></pre>', colour_code, rendered, flags=re.S)
-    articles.append(dict(path=rel, title=title, group=group, text=raw, html=rendered))
-articles.sort(key=lambda d: (d['group'].casefold(), d['path'].casefold()))
+    articles.append(dict(path=rel, title=title, number=article_number(p.relative_to(root)), group=group, text=raw, html=rendered))
+articles.sort(key=lambda d: [int(x) if x.isdigit() else x.casefold() for x in re.split(r'(\d+)',d['group']+'/'+d['path'])])
 payload = json.dumps(articles, ensure_ascii=False).replace('<', '\\u003c')
 page = r'''<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>HFT Engineering Library</title>
@@ -74,8 +76,12 @@ search.addEventListener('input',directory);document.querySelector('#home').oncli
 out=root/'index.html'
 page = page.replace('HFT Engineering Library', 'The Learning Curve').replace('HFT Library', 'Learning Library').replace('Linux · Networking · Trading systems', 'Networking · Programming · Systems').replace('HFT Engineering Library', 'The Learning Curve')
 page = page.replace("const dest=docs.find(x=>x.path===decodeURIComponent(resolved));", "const dest=docs.find(x=>x.path===decodeURIComponent(resolved) && !x.path.endsWith('.pdf'));")
-theme_root = Path(__file__).resolve().parent
-page = page.replace('</style>', (theme_root/'reader_theme.css').read_text()+'\n</style>')
-page = page.replace("search.addEventListener('input',directory);", (theme_root/'reader_theme.js').read_text()+"\nsearch.addEventListener('input',directory);")
+theme_root = Path(__file__).resolve().parent/'tools/reader'
+page = page.replace('</style>', (theme_root/'reader_theme.css').read_text()+(theme_root/'reader_content.css').read_text()+'\n</style>')
+page = page.replace("search.addEventListener('input',directory);", (theme_root/'reader_theme.js').read_text()+(theme_root/'reader_content.js').read_text()+"\nsearch.addEventListener('input',directory);")
+redirects = (root/'reader_redirects.json').read_text() if (root/'reader_redirects.json').exists() else '{}'
+page=page.replace("path=decodeURIComponent(encoded||'')", "path=("+redirects+")[decodeURIComponent(encoded||'')]||decodeURIComponent(encoded||'')")
+page=page.replace("const label=s=>s.replace(/^\\d+_?/,'').replaceAll('_',' ');", "const label=s=>s.replaceAll('_',' ');\nconst entryTitle=d=>(d.number ? d.number+' · ' : '')+d.title;")
+page=page.replace('esc(d.title)', 'esc(entryTitle(d))')
 out.write_text(page.replace('PAYLOAD',payload))
 print(f'Generated {out}: {len(articles)} articles, {out.stat().st_size:,} bytes')
