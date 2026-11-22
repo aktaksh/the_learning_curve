@@ -18,7 +18,7 @@ names = {'01_networking/01_ccna':'01 Networking / 01 CCNA','01_networking/02_ccn
 for p in sorted(root.rglob('*')):
     if not p.is_file() or excluded(p.relative_to(root)):
         continue
-    if p.suffix.lower() not in ('.md', '.txt', '.py', '.cpp', '.sh', '.pdf') or p.name in {'build_reader.py','reader_support.py','requirements-reader.txt'}:
+    if p.suffix.lower() not in ('.md', '.txt', '.py', '.cpp', '.sh', '.pdf') or p.name in {'build_reader.py','reader_support.py','serve_library.py','requirements-reader.txt'}:
         continue
     if p.stat().st_size == 0:
         continue
@@ -30,7 +30,7 @@ for p in sorted(root.rglob('*')):
     if p.suffix.lower()=='.pdf':
         import html
         from urllib.parse import quote
-        rendered = '<h1>'+html.escape(title)+'</h1><p>PDF reference book. Full text is not indexed.</p><a href="'+p.as_uri()+'">Open PDF reference</a>'
+        rendered = '<h1>'+html.escape(title)+'</h1><p>Loading the PDF reading room…</p>'
     elif p.suffix.lower() in ('.py','.cpp','.sh') or (p.suffix.lower()=='.txt' and not raw.lstrip().startswith('# ')):
         import html
         rendered = '<h1>'+html.escape(title)+'</h1><pre><code>'+html.escape(raw)+'</code></pre>'
@@ -75,10 +75,9 @@ search.addEventListener('input',directory);document.querySelector('#home').oncli
 </script></body></html>'''
 out=root/'index.html'
 page = page.replace('HFT Engineering Library', 'The Learning Curve').replace('HFT Library', 'Learning Library').replace('Linux · Networking · Trading systems', 'Networking · Programming · Systems').replace('HFT Engineering Library', 'The Learning Curve')
-page = page.replace("const dest=docs.find(x=>x.path===decodeURIComponent(resolved));", "const dest=docs.find(x=>x.path===decodeURIComponent(resolved) && !x.path.endsWith('.pdf'));")
 theme_root = Path(__file__).resolve().parent/'tools/reader'
-page = page.replace('</style>', (theme_root/'reader_theme.css').read_text()+(theme_root/'reader_content.css').read_text()+'\n</style>')
-page = page.replace("search.addEventListener('input',directory);", (theme_root/'reader_theme.js').read_text()+(theme_root/'reader_content.js').read_text()+"\nsearch.addEventListener('input',directory);")
+page = page.replace('</style>', (theme_root/'reader_theme.css').read_text()+(theme_root/'reader_content.css').read_text()+(theme_root/'pdf_reader.css').read_text()+'\n</style>')
+page = page.replace("search.addEventListener('input',directory);", (theme_root/'reader_theme.js').read_text()+(theme_root/'reader_content.js').read_text()+(theme_root/'pdf_reader.js').read_text()+"\nsearch.addEventListener('input',directory);")
 redirects = (root/'reader_redirects.json').read_text() if (root/'reader_redirects.json').exists() else '{}'
 page=page.replace("path=decodeURIComponent(encoded||'')", "path=("+redirects+")[decodeURIComponent(encoded||'')]||decodeURIComponent(encoded||'')")
 page=page.replace("const label=s=>s.replace(/^\\d+_?/,'').replaceAll('_',' ');", "const label=s=>s.replaceAll('_',' ');\nconst entryTitle=d=>(d.number ? d.number+' · ' : '')+d.title;")

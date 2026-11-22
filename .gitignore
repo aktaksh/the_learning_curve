@@ -1,6 +1,8 @@
 .DS_Store
 __pycache__/
 *.pyc
+.venv/
+.reader-launch.lock
 .reorganization_backup/
 .reorganization_stage/
 .note-backups/
