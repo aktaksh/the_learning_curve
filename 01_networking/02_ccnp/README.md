@@ -21,6 +21,7 @@
 | 12 | [Practice assessments](12_practice_assessments.md) | Original ENCOR/ENARSI questions and rubric |
 | 13 | [Worked examples](13_worked_examples.md) | Route calculations, policy decisions and packet diagnosis |
 | 14 | [Blueprint checklist](14_blueprint_checklist.md) | Track each published topic to its lesson and lab |
+| 15 | [Spanning Tree Protocols](15_spanning_tree_protocols.md) | STP, PVST+, RSTP, MST, root/port selection, safeguards and labs |
 
 ```mermaid
 flowchart LR

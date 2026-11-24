@@ -8,6 +8,7 @@ A study library for networking, programming and Linux infrastructure. Build foun
 - [Open the searchable reader](index.html)
 - [Follow the study path](00_study_guides/04_study_path.md)
 - [Track practical skills and evidence](00_study_guides/05_study_tracker.md)
+- [QuickRef cheat sheets for revision](00_study_guides/07_quickref_review_links.md)
 - [Open HFT Engineering](../HFT_Docs/index.html)
 
 ## Subject map
@@ -31,6 +32,8 @@ Personal-note directories, archives and build artifacts remain on disk but are e
 ## Maintaining the library
 
 After editing sources or adding PDFs, double-click **Start Library.command** again. It prepares its private Python environment when needed, refreshes the index and opens the local reader. See [library maintenance](00_study_guides/06_library_maintenance.md) for naming and publishing rules.
+  
+  
   
   
   

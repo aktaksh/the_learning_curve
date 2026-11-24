@@ -49,7 +49,6 @@ Access connects endpoints, distribution commonly aggregates access and applies r
 ## Sources and original notes
 
 - [Cisco STP configuration guide](https://www.cisco.com/c/en/us/td/docs/switches/lan/c9000/lyr2-fwd/stp/stp-configuration-guide/m-stp.html)
-- [Original CCNP class notes](../01_networking/03_class_notes/ccnp_d1.md)
-- [Original switching notes](../01_networking/MyNotes/Day1.md)
+- [CCNP STP class document](../01_networking/03_class_docs/ccnp_lesson_1_stp.pdf)
 
 This article consolidates the rough notes and corrects identifiable factual mistakes. It does not certify the rest of the repository.

@@ -16,7 +16,7 @@ For a manual rebuild from the repository root after setup:
 
 Double-click **Start Library.command** to open the reader. The launcher serves only the two library roots on the local computer and excludes personal-note and archive paths. Keep its Terminal window open; Control-C stops it. PDF.js is bundled locally, so reading does not require an external CDN.
 
-Add PDFs to a published subject folder and rebuild. They open inside the library with search, page controls, zoom and thumbnails. Search within a PDF uses the viewer's search control; global article search indexes PDF titles and paths, not their complete contents. Scanned pages need an existing text layer for text search.
+Add PDFs to a published subject folder and rebuild. Select a PDF entry, then choose **Open original PDF** to open it directly in your browser or configured PDF application. Embedded PDF.js rendering is disabled. Global article search indexes PDF titles and paths, not their complete contents.
 
 Referenced PDFs and images must remain at their relative paths. Opening `index.html` directly with `file://` still supports articles; PDF viewing requires the launcher. Mermaid blocks currently display their source.
 

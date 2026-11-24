@@ -14,7 +14,7 @@ from reader_support import excluded, article_number, publish_markdown
 root = Path(sys.argv[1]).resolve() if len(sys.argv) > 1 else Path(__file__).resolve().parent
 md = MarkdownIt('commonmark', {'html': False}).enable('table').enable('strikethrough')
 articles = []
-names = {'01_networking/01_ccna':'01 Networking / 01 CCNA','01_networking/02_ccnp':'01 Networking / 02 CCNP','01_networking/03_class_notes':'01 Networking / 03 Classes','03_python/00_study_routes':'03 Python / 00 Study routes','03_python/01_lessons':'03 Python / 01 Lessons'}
+names = {'01_networking/01_ccna':'01 Networking / 01 CCNA','01_networking/02_ccnp':'01 Networking / 02 CCNP','01_networking/03_class_docs':'01 Networking / 03 Class documents','03_python/00_study_routes':'03 Python / 00 Study routes','03_python/01_lessons':'03 Python / 01 Lessons'}
 for p in sorted(root.rglob('*')):
     if not p.is_file() or excluded(p.relative_to(root)):
         continue
